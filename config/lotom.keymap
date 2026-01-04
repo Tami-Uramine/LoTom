@@ -39,7 +39,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
+                <&inc_dec_kp LS(K_SCROLL_UP) LS(K_SCROLL_DOWN)>,
                 <&scroll_up_down>;
         };
 
@@ -52,10 +52,9 @@
 &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans  &trans  &trans  &mo 3      &trans     &trans
             >;
 
-            sensor-bindings = <
-                &inc_dec_kp RIGHT_ARROW LEFT_ARROW
-                &scroll_up_down
-            >;
+            sensor-bindings =
+                <&inc_dec_kp LS(K_SCROLL_UP) LS(K_SCROLL_DOWN)>,
+                <&scroll_up_down>;
         };
 
         SCROLL {
@@ -67,10 +66,9 @@
 &kp F12     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <
-                &inc_dec_kp RIGHT_ARROW LEFT_ARROW
-                &scroll_up_down
-            >;
+            sensor-bindings =
+                <&inc_dec_kp LS(K_SCROLL_UP) LS(K_SCROLL_DOWN)>,
+                <&scroll_up_down>;
         };
 
         ARROW {
@@ -82,10 +80,9 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans              &trans          &trans
             >;
 
-            sensor-bindings = <
-                &inc_dec_kp RIGHT_ARROW LEFT_ARROW
-                &scroll_up_down
-            >;
+            sensor-bindings =
+                <&inc_dec_kp LS(K_SCROLL_UP) LS(K_SCROLL_DOWN)>,
+                <&scroll_up_down>;
         };
 
         NUM {
@@ -97,10 +94,9 @@
 &trans                   &trans        &trans        &trans                &trans        &trans  &trans  &kp LEFT_SHIFT   &trans        &trans
             >;
 
-            sensor-bindings = <
-                &inc_dec_kp RIGHT_ARROW LEFT_ARROW
-                &scroll_up_down
-            >;
+            sensor-bindings =
+                <&inc_dec_kp LS(K_SCROLL_UP) LS(K_SCROLL_DOWN)>,
+                <&scroll_up_down>;
         };
 
         FUNCTION {
@@ -112,10 +108,9 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &kp F12
             >;
 
-            sensor-bindings = <
-                &inc_dec_kp RIGHT_ARROW LEFT_ARROW
-                &scroll_up_down
-            >;
+            sensor-bindings =
+                <&inc_dec_kp LS(K_SCROLL_UP) LS(K_SCROLL_DOWN)>,
+                <&scroll_up_down>;
         };
 
         BT {
@@ -127,10 +122,9 @@
 &trans         &trans     &trans     &trans     &trans  &trans  &trans  &trans      &trans      &trans
             >;
 
-            sensor-bindings = <
-                &inc_dec_kp RIGHT_ARROW LEFT_ARROW
-                &scroll_up_down
-            >;
+            sensor-bindings =
+                <&inc_dec_kp LS(K_SCROLL_UP) LS(K_SCROLL_DOWN)>,
+                <&scroll_up_down>;
         };
     };
 };
