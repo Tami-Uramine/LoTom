@@ -60,8 +60,8 @@
         ARROW {
             bindings = <
 &trans        &kp RA(RC(DEL))
-&trans        &trans           &trans  &trans  &trans  &trans  &kp PAGE_UP    &kp HOME            &kp UP_ARROW        &kp END              &kp LG(P)         &kp LG(L)
-&bt BT_SEL 0  &trans           &trans  &trans  &trans  &trans  &kp PAGE_DOWN  &kp LEFT_ARROW      &kp DOWN_ARROW      &kp RIGHT            &kp LG(K)         &bt BT_SEL 0
+&trans        &trans           &trans  &trans  &trans  &trans  &kp LC(Z)      &kp HOME            &kp UP_ARROW        &kp END              &kp PAGE_UP       &kp LG(L)
+&bt BT_SEL 0  &trans           &trans  &trans  &trans  &trans  &kp LC(S)      &kp LEFT_ARROW      &kp DOWN_ARROW      &kp RIGHT            &kp PAGE_DOWN     &bt BT_SEL 0
 &bt BT_SEL 1  &trans           &trans  &trans  &trans  &trans  &kp LG(LS(S))  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp LG(UP_ARROW)  &bt BT_SEL 1
 &bt BT_SEL 2  &trans           &trans  &trans  &trans  &trans  &trans         &trans              &kp LG(DOWN_ARROW)  &bt BT_SEL 2
             >;
