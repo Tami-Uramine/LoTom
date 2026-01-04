@@ -73,11 +73,11 @@
 
         ARROW {
             bindings = <
-&trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP       &kp HOME            &kp UP_ARROW    &kp END              &trans              &kp LG(P)
-&trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_DOWN     &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT            &trans              &kp LG(K)
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(UP_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(D)       &kp LG(RIGHT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(L)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans              &trans          &trans
+&trans        &trans
+&bt BT_SEL 0  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP       &kp HOME            &kp UP_ARROW    &kp END              &trans              &kp LG(P)
+&bt BT_SEL 1  &trans  &trans  &trans  &trans  &trans  &kp PAGE_DOWN     &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT            &trans              &kp LG(K)
+&bt BT_SEL 2  &trans  &trans  &trans  &trans  &trans  &kp LG(UP_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(D)       &kp LG(RIGHT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(L)
+&bt BT_SEL 3  &trans  &trans  &trans  &trans  &trans  &trans            &trans              &trans          &trans
             >;
 
             sensor-bindings =
@@ -115,11 +115,11 @@
 
         BT {
             bindings = <
-&trans         &trans
-&kp LG(Q)      &kp LC(W)  &trans     &trans     &trans  &trans  &trans  &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp LG(LS(Z))  &trans     &kp LC(C)  &trans     &trans  &trans  &trans  &trans      &trans      &trans        &trans        &trans
-&kp LG(Z)      &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans  &trans  &trans      &trans      &trans        &trans        &trans
-&trans         &trans     &trans     &trans     &trans  &trans  &trans  &trans      &trans      &trans
+&trans        &trans
+&bt BT_SEL 0  &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_PRV  &bt BT_NXT  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&bt BT_SEL 1  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans        &trans        &trans
+&bt BT_SEL 2  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans        &trans        &trans
+&bt BT_SEL 3  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans
             >;
 
             sensor-bindings =
