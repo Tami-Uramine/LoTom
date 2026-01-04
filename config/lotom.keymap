@@ -60,10 +60,10 @@
         ARROW {
             bindings = <
 &trans        &kp RA(RC(DEL))
-&trans        &trans           &trans  &trans  &trans  &trans  &kp PAGE_UP       &kp HOME            &kp UP_ARROW    &kp END              &kp LG(P)           &trans
-&bt BT_SEL 0  &trans           &trans  &trans  &trans  &trans  &kp PAGE_DOWN     &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT            &kp LG(K)           &bt BT_SEL 0
-&bt BT_SEL 1  &trans           &trans  &trans  &trans  &trans  &kp LG(UP_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(D)       &kp LG(RIGHT_ARROW)  &kp LG(DOWN_ARROW)  &bt BT_SEL 1
-&bt BT_SEL 2  &trans           &trans  &trans  &trans  &trans  &trans            &trans              &kp LG(L)       &bt BT_SEL 2
+&trans        &trans           &trans  &trans  &trans  &trans  &kp PAGE_UP    &kp HOME            &kp UP_ARROW        &kp END              &kp LG(P)         &kp LG(L)
+&bt BT_SEL 0  &trans           &trans  &trans  &trans  &trans  &kp PAGE_DOWN  &kp LEFT_ARROW      &kp DOWN_ARROW      &kp RIGHT            &kp LG(K)         &bt BT_SEL 0
+&bt BT_SEL 1  &trans           &trans  &trans  &trans  &trans  &kp LG(LS(S))  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp LG(UP_ARROW)  &bt BT_SEL 1
+&bt BT_SEL 2  &trans           &trans  &trans  &trans  &trans  &trans         &trans              &kp LG(DOWN_ARROW)  &bt BT_SEL 2
             >;
 
             sensor-bindings =
@@ -73,11 +73,11 @@
 
         NUM {
             bindings = <
-&trans  &kp DOUBLE_QUOTES
-&trans  &trans             &trans  &trans  &trans  &trans  &kp CAPS         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH     &kp LEFT_BRACKET
-&trans  &trans             &trans  &trans  &trans  &trans  &kp TAB          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp RIGHT_BRACKET
-&trans  &trans             &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &kp COLON
-&trans  &trans             &trans  &trans  &trans  &trans  &trans           &kp PERIOD       &kp PLUS         &kp EQUAL
+&trans  &kp K_CALCULATOR
+&trans  &trans            &trans  &trans  &trans  &trans  &kp CAPS         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH     &kp LEFT_BRACKET
+&trans  &trans            &trans  &trans  &trans  &trans  &kp TAB          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp RIGHT_BRACKET
+&trans  &trans            &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &kp COLON
+&trans  &trans            &trans  &trans  &trans  &trans  &trans           &kp PERIOD       &kp PLUS         &kp EQUAL
             >;
 
             sensor-bindings =
