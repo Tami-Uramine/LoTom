@@ -76,8 +76,8 @@
         ARROW {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp HOME            &kp UP_ARROW    &kp END              &trans              &kp LG(P)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT            &trans              &kp LG(K)
+&trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP       &kp HOME            &kp UP_ARROW    &kp END              &trans              &kp LG(P)
+&trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_DOWN     &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT            &trans              &kp LG(K)
 &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(UP_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(D)       &kp LG(RIGHT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(L)
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans              &trans          &trans
             >;
