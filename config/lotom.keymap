@@ -59,11 +59,11 @@
 
         ARROW {
             bindings = <
-&trans        &kp RA(RC(DEL))
-&trans        &trans           &trans        &trans  &trans  &trans  &kp LC(Z)      &kp HOME            &kp UP_ARROW        &kp END              &kp PAGE_UP       &kp LG(L)
-&bt BT_SEL 0  &trans           &trans        &trans  &trans  &trans  &kp LC(S)      &kp LEFT_ARROW      &kp DOWN_ARROW      &kp RIGHT            &kp PAGE_DOWN     &trans
-&bt BT_SEL 1  &trans           &trans        &trans  &trans  &trans  &kp LG(LS(S))  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp LG(UP_ARROW)  &trans
-&bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4  &trans  &trans  &trans  &trans         &trans              &kp LG(DOWN_ARROW)  &trans
+&trans        &kp LA(LC(DEL))
+&trans        &trans           &trans        &trans  &trans  &trans  &kp LC(Y)  &kp HOME            &kp UP_ARROW        &kp END              &kp PAGE_UP       &kp LA(F4)
+&bt BT_SEL 0  &trans           &trans        &trans  &trans  &trans  &kp LC(Z)  &kp LEFT_ARROW      &kp DOWN_ARROW      &kp RIGHT            &kp PAGE_DOWN     &kp LG(L)
+&bt BT_SEL 1  &trans           &trans        &trans  &trans  &trans  &kp LC(S)  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp LG(UP_ARROW)  &kp LG(LS(S))
+&bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4  &trans  &trans  &trans  &trans     &trans              &kp LG(DOWN_ARROW)  &trans
             >;
 
             sensor-bindings =
