@@ -41,12 +41,15 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &mkp MB1>
-                , <&macro_pause_for_release> // ドラッグ対策に離すまで待つ
-                , <&macro_release &mkp MB1>
-                , <&macro_tap &to 0> // デフォルトレイヤーに戻る
-                , <&macro_tap &sl_mouse 7> // 一瞬だけクリック用レイヤに飛ぶ
-                ;
+                <&macro_press>,
+                <&mkp MB1>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mkp MB1>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>,
+                <&sl_mouse 7>;
         };
     };
 
@@ -70,10 +73,10 @@
         MOUSE {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB5   &kp LC(X)  &mo 2      &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(A)  &kp LC(C)  &mkp LCLK  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &kp LC(V)  &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB5   &kp LC(X)  &mo 2            &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(A)  &kp LC(C)  &click_and_exit  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &kp LC(V)  &trans           &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans           &trans
             >;
 
             sensor-bindings =
@@ -149,6 +152,16 @@
             sensor-bindings =
                 <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
                 <&scroll_up_down>;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &click_and_exit  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans
+            >;
         };
     };
 };
