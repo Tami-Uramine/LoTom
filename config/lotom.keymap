@@ -53,6 +53,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        test {
+            bindings = <&none>;
+            key-positions = <22>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
