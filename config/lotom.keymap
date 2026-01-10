@@ -6,8 +6,6 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 1 250>; };
-
 / {
     behaviors {
         scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
