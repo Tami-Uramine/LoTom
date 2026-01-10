@@ -37,8 +37,8 @@
     };
 
     macros {
-        click_and_exit: click_and_exit {
-            label = "CLICK_AND_EXIT";
+        lclick_and_exit: lclick_and_exit {
+            label = "LCLICK_AND_EXIT";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
