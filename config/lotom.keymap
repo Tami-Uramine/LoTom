@@ -131,6 +131,81 @@
                 <&to 0>,
                 <&macro_tap>;
         };
+
+        c_and_exit: c_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "C_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp C>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp C>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        d_and_exit: d_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "D_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp D>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp D>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        e_and_exit: e_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "E_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp E>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp E>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        f_and_exit: f_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "F_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp F>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp F>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        g_and_exit: g_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "G_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp G>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp G>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
