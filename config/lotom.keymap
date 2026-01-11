@@ -616,10 +616,10 @@
         MOUSE {
             bindings = <
 &esc_and_exit   &del_and_exit
-&tab_and_exit   &q_and_exit    &w_and_exit  &e_and_exit  &r_and_exit  &t_and_exit      &mkp MB5   &kp LC(X)  &mo 2             &o_and_exit       &p_and_exit       &bs_and_exit
-&caps_and_exit  &a_and_exit    &s_and_exit  &d_and_exit  &f_and_exit  &g_and_exit      &kp LC(A)  &kp LC(C)  &lclick_and_exit  &rclick_and_exit  &kp LEFT_CONTROL  &ent_and_exit
-&trans          &z_and_exit    &x_and_exit  &c_and_exit  &v_and_exit  &b_and_exit      &mkp MB4   &kp LC(V)  &comma_and_exit   &period_and_exit  &slash_and_exit   &trans
-&trans          &gui_and_exit  &trans       &trans       &trans       &space_and_exit  &trans     &trans     &trans            &trans
+&tab_and_exit   &q_and_exit    &w_and_exit  &e_and_exit  &r_and_exit  &t_and_exit      &alt_right_and_exit  &ctl_x_and_exit  &mo 2             &o_and_exit       &p_and_exit       &bs_and_exit
+&caps_and_exit  &a_and_exit    &s_and_exit  &d_and_exit  &f_and_exit  &g_and_exit      &ctl_a_and_exit      &ctl_c_and_exit  &lclick_and_exit  &rclick_and_exit  &kp LEFT_CONTROL  &ent_and_exit
+&trans          &z_and_exit    &x_and_exit  &c_and_exit  &v_and_exit  &b_and_exit      &alt_left_and_exit   &ctl_v_and_exit  &comma_and_exit   &period_and_exit  &slash_and_exit   &trans
+&trans          &gui_and_exit  &trans       &trans       &trans       &space_and_exit  &trans               &trans           &trans            &trans
             >;
 
             sensor-bindings =
