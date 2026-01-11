@@ -356,6 +356,96 @@
                 <&to 0>,
                 <&macro_tap>;
         };
+
+        ctl_c_and_exit: ctl_c_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "CTL_C_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(C)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LC(C)>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        ctl_a_and_exit: ctl_a_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "CTL_A_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(A)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LC(A)>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        ctl_x_and_exit: ctl_x_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "CTL_X_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(X)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LC(X)>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        ctl_v_and_exit: ctl_v_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "CTL_V_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(V)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LC(V)>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        alt_right_and_exit: alt_right_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "ALT_RIGHT_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(RIGHT_ARROW)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LA(RIGHT_ARROW)>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        alt_left_and_exit: alt_left_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "ALT_LEFT_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LA(LEFT_ARROW)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LA(LEFT_ARROW)>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
