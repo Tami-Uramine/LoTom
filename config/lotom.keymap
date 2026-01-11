@@ -206,6 +206,156 @@
                 <&to 0>,
                 <&macro_tap>;
         };
+
+        o_and_exit: o_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "O_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp O>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp O>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        p_and_exit: p_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "P_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp P>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp P>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        q_and_exit: q_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "Q_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp Q>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp Q>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        r_and_exit: r_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "R_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp R>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp R>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        s_and_exit: s_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "S_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp S>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp S>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        t_and_exit: t_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "T_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp T>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp T>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        v_and_exit: v_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "V_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp V>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp V>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        w_and_exit: w_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "W_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp W>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp W>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        x_and_exit: x_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "X_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp X>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp X>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        z_and_exit: z_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "Z_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp Z>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp Z>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
