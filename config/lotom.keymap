@@ -73,9 +73,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <1>;
             bindings =
-                <&macro_press   &kp>,   /* 引数で渡されたキーを押す */
+                <&macro_press>,
+                <&kp>,
                 <&macro_pause_for_release>,
-                <&macro_release &kp>,   /* 同じキーを離す */
+                <&macro_release>,
+                <&kp>,
                 <&macro_tap>,
                 <&to 0>,
                 <&macro_tap>;
@@ -95,6 +97,36 @@
                 <&kp>,
                 <&macro_release>,
                 <&kp>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        a_and_exit: a_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "A_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp A>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp A>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        b_and_exit: b_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "B_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp B>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp B>,
                 <&macro_tap>,
                 <&to 0>,
                 <&macro_tap>;
