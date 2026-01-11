@@ -73,11 +73,15 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <2>;
             bindings =
-                <&macro_press   &kp>,   /* 修飾キーを押す (arg0) */
-                <&macro_press   &kp>,   /* 通常キーを押す (arg1) */
+                <&macro_press>,
+                <&kp>,
+                <&macro_press>,
+                <&kp>,
                 <&macro_pause_for_release>,
-                <&macro_release &kp>,   /* 通常キーを離す */
-                <&macro_release &kp>,   /* 修飾キーを離す */
+                <&macro_release>,
+                <&kp>,
+                <&macro_release>,
+                <&kp>,
                 <&macro_tap>,
                 <&to 0>,
                 <&macro_tap>;
@@ -106,10 +110,10 @@
         MOUSE {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB5   &kp LC(X)  &mo 2            &trans     &trans            &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(A)  &kp LC(C)  &click_and_exit  &mkp RCLK  &kp LEFT_CONTROL  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &kp LC(V)  &trans           &trans     &trans            &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB5   &kp LC(X)  &mo 2             &trans            &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(A)  &kp LC(C)  &lclick_and_exit  &rclick_and_exit  &kp LEFT_CONTROL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4   &kp LC(V)  &trans            &trans            &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans            &trans
             >;
 
             sensor-bindings =
