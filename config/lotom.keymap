@@ -596,6 +596,21 @@
                 <&to 0>,
                 <&macro_tap>;
         };
+
+        space_and_exit: space_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "SPACE_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp SPACE>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp SPACE>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
