@@ -607,6 +607,36 @@
                 <&to 0>,
                 <&macro_tap>;
         };
+
+        y_and_exit: y_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "Y_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp Y>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp Y>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
+
+        u_and_exit: u_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "U_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp U>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp U>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
@@ -632,7 +662,7 @@
             bindings = <
 &esc_and_exit   &del_and_exit
 &tab_and_exit   &q_and_exit    &w_and_exit  &e_and_exit  &r_and_exit  &t_and_exit      &ctl_a_and_exit  &alt_left_and_exit  &alt_right_and_exit  &o_and_exit       &p_and_exit       &bs_and_exit
-&caps_and_exit  &a_and_exit    &s_and_exit  &d_and_exit  &f_and_exit  &g_and_exit      &ctl_c_and_exit  &lclick_and_exit    &rclick_and_exit     &mo 2             &kp LEFT_CONTROL  &ent_and_exit
+&caps_and_exit  &a_and_exit    &s_and_exit  &d_and_exit  &f_and_exit  &g_and_exit      &ctl_c_and_exit  &kp LEFT_CONTROL    &lclick_and_exit     &mo 2             &rclick_and_exit  &ent_and_exit
 &trans          &z_and_exit    &x_and_exit  &c_and_exit  &v_and_exit  &b_and_exit      &ctl_x_and_exit  &ctl_v_and_exit     &comma_and_exit      &period_and_exit  &slash_and_exit   &trans
 &trans          &gui_and_exit  &trans       &trans       &trans       &space_and_exit  &trans           &trans              &trans               &trans
             >;
