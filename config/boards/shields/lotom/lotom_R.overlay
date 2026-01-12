@@ -25,10 +25,10 @@
             ;
     };
 
-    // タイムアウト時間を変更可能なカスタムプロセッサ
-    zip_temp_layer_long: zip_temp_layer_long {
+    /* --- 修正ポイント1: 2つの引数(レイヤー・時間)を受け取るカスタムプロセッサを定義 --- */
+    my_temp_layer: my_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>; // レイヤー番号とタイムアウト時間の2つを受け取る
+        #input-processor-cells = <2>; 
     };
 
     split_inputs {
@@ -80,8 +80,11 @@
 
 &trackball_listener {
     status = "okay";
-    // レイヤー1を、停止後 60秒間(60000ms) 維持する設定
-    input-processors = <&zip_temp_layer_long 1 60000>;
+    device = <&trackball>;
+
+    /* --- 修正ポイント2: 標準の zip_temp_layer ではなく my_temp_layer を使用 --- */
+    /* これにより 60000ms（60秒）が確実に適用されます */
+    input-processors = <&my_temp_layer 1 60000>;
 
     scroll {
         layers = <2>;
