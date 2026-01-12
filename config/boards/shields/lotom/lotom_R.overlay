@@ -25,10 +25,10 @@
             ;
     };
 
-    /* --- 修正ポイント1: 2つの引数(レイヤー・時間)を受け取るカスタムプロセッサを定義 --- */
-    my_temp_layer: my_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>; 
+    /* --- 修正ポイント: タイムアウト機能を持たない「セット専用」プロセッサを定義 --- */
+    zip_set_layer_custom: zip_set_layer_custom {
+        compatible = "zmk,input-processor-set-layer";
+        #input-processor-cells = <1>; 
     };
 
     split_inputs {
@@ -82,9 +82,9 @@
     status = "okay";
     device = <&trackball>;
 
-    /* --- 修正ポイント2: 標準の zip_temp_layer ではなく my_temp_layer を使用 --- */
-    /* これにより 60000ms（60秒）が確実に適用されます */
-    input-processors = <&my_temp_layer 1 60000>;
+    /* --- 修正ポイント: 作成したプロセッサを使い、レイヤー1へ「セット」する --- */
+    /* これでトラックボールを動かした瞬間にレイヤー1に固定されます */
+    input-processors = <&zip_set_layer_custom 1>;
 
     scroll {
         layers = <2>;
