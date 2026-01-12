@@ -637,6 +637,21 @@
                 <&to 0>,
                 <&macro_tap>;
         };
+
+        ctl_z_and_exit: ctl_z_and_exit {
+            compatible = "zmk,behavior-macro";
+            label = "CTL_Z_AND_EXIT";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(Z)>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LC(Z)>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>;
+        };
     };
 
     combos { compatible = "zmk,combos"; };
