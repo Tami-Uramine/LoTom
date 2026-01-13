@@ -736,10 +736,10 @@
         MOUSE {
             bindings = <
 &esc_and_exit   &del_and_exit
-&tab_and_exit   &q_and_exit    &w_and_exit  &e_and_exit  &r_and_exit  &t_and_exit      &y_and_exit      &u_and_exit       &i_and_exit       &o_and_exit       &p_and_exit      &bs_and_exit
-&caps_and_exit  &a_and_exit    &s_and_exit  &d_and_exit  &f_and_exit  &g_and_exit      &ctl_a_and_exit  &lclick_and_exit  &rclick_and_exit  &mo 2             &kp LCTRL        &ent_and_exit
-&trans          &z_and_exit    &x_and_exit  &c_and_exit  &v_and_exit  &b_and_exit      &ctl_z_and_exit  &ctl_v_and_exit   &comma_and_exit   &period_and_exit  &slash_and_exit  &trans
-&trans          &gui_and_exit  &trans       &trans       &trans       &space_and_exit  &trans           &trans            &trans            &trans
+&tab_and_exit   &q_and_exit    &w_and_exit  &e_and_exit  &r_and_exit  &t_and_exit      &y_and_exit  &u_and_exit       &i_and_exit       &o_and_exit       &p_and_exit  &bs_and_exit
+&caps_and_exit  &a_and_exit    &s_and_exit  &d_and_exit  &f_and_exit  &g_and_exit      &h_and_exit  &lclick_and_exit  &rclick_and_exit  &mo 2             &kp LCTRL    &ent_and_exit
+&trans          &z_and_exit    &x_and_exit  &c_and_exit  &v_and_exit  &b_and_exit      &n_and_exit  &m_and_exit       &comma_and_exit   &period_and_exit  &trans       &trans
+&trans          &gui_and_exit  &trans       &trans       &trans       &space_and_exit  &trans       &trans            &trans            &trans
             >;
 
             sensor-bindings =
@@ -749,11 +749,11 @@
 
         ARROW {
             bindings = <
-&trans        &trans
-&trans        &trans        &trans        &trans  &trans  &trans  &trans       &trans              &kp UP_ARROW    &trans               &kp LG(UP_ARROW)    &trans
-&bt BT_SEL 0  &trans        &trans        &trans  &trans  &trans  &trans       &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT            &kp LG(DOWN_ARROW)  &trans
-&bt BT_SEL 1  &trans        &trans        &trans  &trans  &trans  &trans       &kp LG(LEFT_ARROW)  &kp LG(D)       &kp LG(RIGHT_ARROW)  &trans              &trans
-&bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &kp PAGE_UP  &kp PAGE_DOWN       &trans          &trans
+&trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &kp LG(UP_ARROW)    &kp UP_ARROW    &kp LG(DOWN_ARROW)   &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT            &kp LCTRL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &kp LG(LEFT_ARROW)  &kp LG(D)       &kp LG(RIGHT_ARROW)  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP  &kp PAGE_DOWN       &trans          &trans
             >;
 
             sensor-bindings =
