@@ -728,7 +728,9 @@
 &kp LCTRL   &kp LEFT_GUI  &kp LALT  &mo 6  &mo 5  &lt 4 SPACE  &lt 4 HOME  &lt 5 END  &lt 3 LEFT_ARROW  &mt LCTRL RIGHT_ARROW
             >;
 
-            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
+            sensor-bindings =
+                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
+                <&scroll_up_down>;
         };
 
         MOUSE {
