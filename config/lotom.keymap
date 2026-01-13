@@ -786,7 +786,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
-                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+                <&scroll_up_down>;
         };
 
         SHIFT+ORANGE {
@@ -800,7 +800,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
-                <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
+                <&scroll_up_down>;
         };
 
         GREEN {
@@ -814,7 +814,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
-                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+                <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
         };
 
         CLICK {
