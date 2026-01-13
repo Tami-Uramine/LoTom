@@ -744,13 +744,13 @@
                 <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
-        GREEN {
+        SHIFT+ORANGE {
             bindings = <
-&trans        &trans
-&trans        &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(NUMBER_5)  &kp RS(NUMBER_6)  &kp RS(NUMBER_7)      &kp RS(NUMBER_8)      &kp RS(NUMBER_9)       &kp RS(NUMBER_0)   &trans
-&bt BT_SEL 0  &trans            &trans            &kp LS(GRAVE)     &kp LS(SEMICOLON)  &kp LS(MINUS)     &kp RS(EQUAL)     &kp RS(SINGLE_QUOTE)  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &trans
-&bt BT_SEL 1  &trans            &trans            &trans            &trans             &trans            &kp F1            &kp F2                &kp F3                &kp F4                 &kp F5             &kp F11
-&bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4      &trans            &trans             &trans            &trans            &trans                &trans                &trans
+&trans  &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(NUMBER_5)  &kp RS(NUMBER_6)  &kp RS(NUMBER_7)      &kp RS(NUMBER_8)      &kp RS(NUMBER_9)       &kp RS(NUMBER_0)   &trans
+&trans  &trans            &trans            &kp LS(GRAVE)     &kp LS(SEMICOLON)  &kp LS(MINUS)     &kp RS(EQUAL)     &kp RS(SINGLE_QUOTE)  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &trans
+&trans  &trans            &trans            &trans            &trans             &trans            &kp F1            &kp F2                &kp F3                &kp F4                 &kp F5             &kp F11
+&trans  &trans            &trans            &trans            &trans             &trans            &trans            &trans                &trans                &trans
             >;
 
             sensor-bindings =
@@ -758,21 +758,21 @@
                 <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
         };
 
-        FUNCTION {
+        GREEN {
             bindings = <
-&trans  &trans
-&kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans
-&kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans  &trans
-&kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans
-&trans  &trans   &trans   &trans   &trans  &trans  &trans  &trans   &trans   &trans
+&trans        &trans
+&trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 1  &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings =
-                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
-                <&scroll_up_down>;
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
-        layer_7 {
+        CLICK {
             bindings = <
 &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans
