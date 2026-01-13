@@ -677,10 +677,10 @@
         default_layer {
             bindings = <
 &kp ESCAPE  &kp DELETE
-&kp TAB     &kp Q         &kp W     &kp E  &kp R  &kp T      &kp Y        &kp U  &kp I             &kp O                  &kp P         &kp BACKSPACE
-&kp CAPS    &kp A         &kp S     &kp D  &kp F  &kp G      &kp H        &kp J  &kp K             &kp L                  &kp SLASH     &kp ENTER
-&kp LSHFT   &kp Z         &kp X     &kp C  &kp V  &kp B      &kp N        &kp M  &kp COMMA         &kp PERIOD             &kp UP_ARROW  &mt RSHIFT DOWN_ARROW
-&kp LCTRL   &kp LEFT_GUI  &kp LALT  &mo 5  &mo 4  &kp SPACE  &lt 3 SPACE  &mo 2  &lt 6 LEFT_ARROW  &mt LCTRL RIGHT_ARROW
+&kp TAB     &kp Q         &kp W     &kp E  &kp R  &kp T        &kp Y       &kp U      &kp I             &kp O                  &kp P           &kp BACKSPACE
+&kp CAPS    &kp A         &kp S     &kp D  &kp F  &kp G        &kp H       &kp J      &kp K             &kp L                  &kp SLASH       &kp ENTER
+&kp LSHFT   &kp Z         &kp X     &kp C  &kp V  &kp B        &kp N       &kp M      &kp COMMA         &kp PERIOD             &lt 2 UP_ARROW  &mt RSHIFT DOWN_ARROW
+&kp LCTRL   &kp LEFT_GUI  &kp LALT  &mo 6  &mo 5  &lt 4 SPACE  &lt 4 HOME  &lt 5 END  &lt 3 LEFT_ARROW  &mt LCTRL RIGHT_ARROW
             >;
 
             sensor-bindings =
@@ -718,11 +718,11 @@
 
         NUM {
             bindings = <
-&trans  &kp ESCAPE
-&trans  &trans      &trans  &trans  &trans  &trans  &kp CAPS         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH     &kp LEFT_PARENTHESIS
-&trans  &trans      &trans  &trans  &trans  &trans  &kp TAB          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp RIGHT_PARENTHESIS
-&trans  &trans      &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &mt LEFT_SHIFT COLON
-&trans  &trans      &trans  &trans  &trans  &trans  &trans           &kp PERIOD       &kp PLUS         &kp EQUAL
+&trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp CAPS         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp SLASH     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp TAB          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &mt LEFT_SHIFT C_AL_CALC
+&trans  &trans  &trans  &trans  &trans  &trans  &trans           &kp PERIOD       &kp PLUS         &kp COLON
             >;
 
             sensor-bindings =
@@ -733,9 +733,9 @@
         ORANGE {
             bindings = <
 &trans  &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7      &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0  &trans
-&trans  &trans        &trans        &kp GRAVE     &kp SEMICOLON  &kp MINUS     &kp EQUAL     &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans        &trans
-&trans  &trans        &trans        &trans        &trans         &trans        &trans        &trans            &trans            &trans             &trans        &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7      &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0   &trans
+&trans  &trans        &trans        &kp GRAVE     &kp SEMICOLON  &kp MINUS     &kp EQUAL     &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
+&trans  &kp F1        &kp F2        &kp F3        &kp F4         &kp F5        &kp F6        &kp F7            &kp F8            &kp F9             &kp F10        &trans
 &trans  &trans        &trans        &trans        &trans         &trans        &trans        &trans            &trans            &trans
             >;
 
@@ -747,9 +747,9 @@
         SHIFT+ORANGE {
             bindings = <
 &trans  &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(NUMBER_5)  &kp RS(NUMBER_6)  &kp RS(NUMBER_7)      &kp RS(NUMBER_8)      &kp RS(NUMBER_9)       &kp RS(NUMBER_0)  &trans
-&trans  &trans            &trans            &kp LS(GRAVE)     &kp LS(SEMICOLON)  &kp LS(MINUS)     &kp RS(EQUAL)     &kp RS(SINGLE_QUOTE)  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &trans            &trans
-&trans  &trans            &trans            &trans            &trans             &trans            &trans            &trans                &trans                &trans                 &trans            &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(NUMBER_5)  &kp RS(NUMBER_6)  &kp RS(NUMBER_7)      &kp RS(NUMBER_8)      &kp RS(NUMBER_9)       &kp RS(NUMBER_0)   &trans
+&trans  &trans            &trans            &kp LS(GRAVE)     &kp LS(SEMICOLON)  &kp LS(MINUS)     &kp RS(EQUAL)     &kp RS(SINGLE_QUOTE)  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &trans
+&trans  &trans            &trans            &trans            &trans             &trans            &trans            &trans                &trans                &trans                 &trans             &trans
 &trans  &trans            &trans            &trans            &trans             &trans            &trans            &trans                &trans                &trans
             >;
 
