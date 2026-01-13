@@ -17,6 +17,16 @@
             tap-ms = <20>;
         };
 
+        scroll_left_right: behavior_sensor_rotate_mouse_wheel_left_right {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_RIGHT_LEFT";
+            #sensor-binding-cells = <0>;
+            // 以下の行を左右のコマンドに変更
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+
+            tap-ms = <20>;
+        };
+
         tab_slide: behavior_sensor_rotate_tab_slide {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_TAB_SLIDE";
