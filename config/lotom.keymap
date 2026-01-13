@@ -21,7 +21,9 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_RIGHT_LEFT";
             #sensor-binding-cells = <0>;
+
             // 以下の行を左右のコマンドに変更
+
             bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
 
             tap-ms = <20>;
@@ -738,9 +740,7 @@
 &kp LCTRL   &kp LEFT_GUI  &kp LALT  &mo 6  &mo 5  &lt 4 SPACE  &lt 4 HOME  &lt 5 END  &lt 3 LEFT_ARROW  &mt LCTRL RIGHT_ARROW
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
-                <&scroll_up_down>;
+            sensor-bindings = <&scroll_left_right>, <&scroll_up_down>;
         };
 
         MOUSE {
