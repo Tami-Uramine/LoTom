@@ -766,7 +766,7 @@
 &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp CAPS         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &mt LEFT_SHIFT TAB
+&trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &kp TAB
 &trans  &trans  &trans  &trans  &trans  &trans  &kp ESCAPE       &trans           &kp PLUS         &kp COLON
             >;
 
