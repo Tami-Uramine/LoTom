@@ -725,7 +725,7 @@
 &kp TAB     &kp Q         &kp W     &kp E  &kp R  &kp T        &kp Y       &kp U      &kp I                    &kp O                  &kp P           &kp BACKSPACE
 &kp CAPS    &kp A         &kp S     &kp D  &kp F  &kp G        &kp H       &kp J      &kp K                    &kp L                  &kp SLASH       &kp ENTER
 &kp LSHFT   &kp Z         &kp X     &kp C  &kp V  &kp B        &kp N       &kp M      &kp COMMA                &kp PERIOD             &lt 2 UP_ARROW  &mt RSHIFT DOWN_ARROW
-&kp LCTRL   &kp LEFT_GUI  &kp LALT  &mo 6  &mo 5  &lt 4 SPACE  &lt 6 HOME  &lt 3 END  &mt LEFT_GUI LEFT_ARROW  &mt LCTRL RIGHT_ARROW
+&kp LCTRL   &kp LEFT_GUI  &kp LALT  &mo 6  &mo 5  &lt 4 SPACE  &lt 6 HOME  &lt 3 END  &mt LEFT_ALT LEFT_ARROW  &mt LCTRL RIGHT_ARROW
             >;
 
             sensor-bindings =
