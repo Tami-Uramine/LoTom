@@ -34,6 +34,15 @@
             quick-release;
             ignore-modifiers;
         };
+
+        lt_mouse: layer_tap_mouse {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_MOUSE";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&mkp>;
+        };
     };
 
     macros {
