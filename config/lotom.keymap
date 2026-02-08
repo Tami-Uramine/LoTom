@@ -76,7 +76,6 @@
                 <&to 0>,
                 <&macro_tap>;
         };
-
     };
 
     combos { compatible = "zmk,combos"; };
@@ -101,10 +100,10 @@
         MOUSE {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans            &trans            &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &lclick_and_exit  &rclick_and_exit  &lt_mouse 2 MCLK  &kp LCTRL  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans            &trans            &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans            &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &lt_mouse 2 MCLK  &kp LCTRL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans            &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
             >;
 
             sensor-bindings =
