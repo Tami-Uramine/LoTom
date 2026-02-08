@@ -44,17 +44,6 @@
             bindings = <&mo>, <&mkp>;
         };
 
-        mo_ctrl_tap: mo_ctrl_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-
-            // マクロを直接指定せず、汎用マクロ mo_ctrl を引数付きで呼び出すようにします
-
-            bindings = <&mo_ctrl>, <&kp>;
-        };
     };
 
     macros {
