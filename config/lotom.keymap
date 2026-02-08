@@ -44,23 +44,13 @@
             bindings = <&mo>, <&mkp>;
         };
 
-        // レイヤー3に切り替えている間だけ、Ctrlを強制的に付与する設定
-
-        zoom_layer: zoom_layer {
-            compatible = "zmk,behavior-layer-modifier";
-            #binding-cells = <0>;
-            layers = <3>;           // 切り替え先のレイヤー番号
-            modifiers = <MOD_LCTL>; // 付与するモディファイア
-        };
-
-        // SLASHキーにこの挙動を割り当てる（ホールドで上記の設定、タップでSLASH）
-
+        // SLASHキーの設定：ホールドでレイヤー3(Ctrl付き)、タップでSLASH
         lt_zoom: lt_zoom {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
-            bindings = <&zoom_layer>, <&kp>;
+            bindings = <&zoom_ctrl_on>, <&kp>;
         };
     };
 
@@ -95,6 +85,15 @@
                 <&to 0>,
                 <&macro_tap>;
         };
+
+        zoom_ctrl_on: zoom_ctrl_on {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &mo 3 &kp LCTRL>,
+                       <&macro_pause_for_release>,
+                       <&macro_release &mo 3 &kp LCTRL>;
+        };
+
     };
 
     combos {
