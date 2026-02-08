@@ -5,6 +5,15 @@
 #include <physical_layouts.dtsi>
 #include "lotom.dtsi"
 
+&zip_temp_layer {
+    excluded-positions = <
+        22 // J
+        23 // K
+        24 // l
+        25 // /
+    >;
+};
+
 / {
     chosen {
         zmk,kscan = &kscan0;
