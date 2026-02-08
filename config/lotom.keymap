@@ -114,10 +114,10 @@
         default_layer {
             bindings = <
 &kp ESCAPE  &kp DELETE
-&kp TAB     &kp Q         &kp W     &kp E  &kp R  &kp T        &kp Y       &kp U      &kp I                    &kp O                     &kp P               &kp BACKSPACE
-&kp CAPS    &kp A         &kp S     &kp D  &kp F  &kp G        &kp H       &kp J      &kp K                    &lt 2 L                   &lt_zoom 0 SLASH    &kp ENTER
-&kp LSHFT   &kp Z         &kp X     &kp C  &kp V  &kp B        &kp N       &kp M      &kp COMMA                &kp PERIOD                &mt LCTRL UP_ARROW  &mt RSHIFT DOWN_ARROW
-&kp LCTRL   &kp LEFT_GUI  &kp LALT  &mo 8  &mo 6  &lt 5 SPACE  &lt 7 HOME  &lt 4 END  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_GUI RIGHT_ARROW
+&kp TAB     &kp Q         &kp W     &kp E  &kp R  &kp T        &kp Y       &kp U      &kp I                  &kp O                    &kp P                 &kp BACKSPACE
+&kp CAPS    &kp A         &kp S     &kp D  &kp F  &kp G        &kp H       &kp J      &kp K                  &lt 2 L                  &lt_zoom 0 SLASH      &kp ENTER
+&kp LSHFT   &kp Z         &kp X     &kp C  &kp V  &kp B        &kp N       &kp M      &kp COMMA              &kp PERIOD               &mt LCTRL LEFT_ARROW  &mt RSHIFT RIGHT_ARROW
+&kp LCTRL   &kp LEFT_GUI  &kp LALT  &mo 8  &mo 6  &lt 5 SPACE  &lt 4 HOME  &lt 7 END  &mt LEFT_ALT UP_ARROW  &mt LEFT_GUI DOWN_ARROW
             >;
 
             sensor-bindings =
@@ -169,7 +169,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &kp CAPS         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SLASH     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp MINUS     &kp TAB
-&trans  &trans  &trans  &trans  &trans  &trans  &kp ESCAPE       &trans           &kp PLUS         &kp COLON
+&trans  &trans  &trans  &trans  &trans  &trans  &trans           &kp ESCAPE       &kp PLUS         &kp COLON
             >;
 
             sensor-bindings =
@@ -207,11 +207,11 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp F1   &kp F2   &kp F3              &kp F4               &kp F5            &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp F6   &kp F7   &kp F8              &kp F9               &kp F10           &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp F11  &kp F12  &kp PRINTSCREEN     &kp C_AL_CALC        &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)
-&trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)
+&trans  &kp LA(F4)
+&trans  &trans      &trans  &trans  &trans  &trans  &kp F1   &kp F2   &kp F3            &kp F4              &kp F5              &trans
+&trans  &trans      &trans  &trans  &trans  &trans  &kp F6   &kp F7   &kp F8            &kp F9              &kp F10             &trans
+&trans  &trans      &trans  &trans  &trans  &trans  &kp F11  &kp F12  &kp PRINTSCREEN   &kp C_AL_CALC       &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)
+&trans  &trans      &trans  &trans  &trans  &trans  &trans   &trans   &kp LG(UP_ARROW)  &kp LG(DOWN_ARROW)
             >;
 
             sensor-bindings =
