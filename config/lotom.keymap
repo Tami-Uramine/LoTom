@@ -59,7 +59,7 @@
                 <&macro_tap>,
                 <&to 0>,
                 <&macro_tap>,
-                <&sl_mouse 7>;
+                <&sl_mouse 0>;
         };
 
         rclick_and_exit: rclick_and_exit {
@@ -179,16 +179,6 @@
             sensor-bindings =
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
                 <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
-        };
-
-        CLICK {
-            bindings = <
-&trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &lclick_and_exit  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans
-            >;
         };
     };
 };
