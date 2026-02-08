@@ -82,18 +82,8 @@
     input-processors = <&zip_temp_layer 1 1000000>;
 
     scroll {
-        layers = <2>;
+        layers = <2 3>;
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
-    };
-
-    // Ctrl付きのスクロール設定（レイヤー3用）
-    zoom_scroll {
-        layers = <3>;
-        input-processors = 
-            <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
-            <&zip_xy_scaler 1 16>, 
-            <&zip_xy_to_scroll_mapper>,
-            <&zip_modifiers 4>; // これを追加することで、常にCtrl＋スクロールになります
     };
 
 };
