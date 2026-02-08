@@ -87,7 +87,7 @@
             bindings = <
 &kp ESCAPE  &kp DELETE
 &kp TAB     &kp Q         &kp W     &kp E               &kp R             &kp T        &kp Y       &kp U      &kp I                    &kp O                     &kp P               &kp BACKSPACE
-&kp CAPS    &kp A         &kp S     &kp D               &kp F             &kp G        &kp H       &kp J      &kp K                    &kp L                     &kp SLASH           &kp ENTER
+&kp CAPS    &kp A         &kp S     &kp D               &kp F             &kp G        &kp H       &kp J      &kp K                    &lt 2 L                   &lt 3 SLASH         &kp ENTER
 &kp LSHFT   &kp Z         &kp X     &kp C               &kp V             &kp B        &kp N       &kp M      &kp COMMA                &kp PERIOD                &mt LCTRL UP_ARROW  &mt RSHIFT DOWN_ARROW
 &kp LCTRL   &kp LEFT_GUI  &kp LALT  &lt 7 INT_MUHENKAN  &lt 6 INT_HENKAN  &lt 5 SPACE  &lt 7 HOME  &lt 4 END  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_GUI RIGHT_ARROW
             >;
@@ -111,7 +111,7 @@
                 <&scroll_up_down>;
         };
 
-        ARROW {
+        SCROLL {
             bindings = <
 &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans  &trans  &trans
