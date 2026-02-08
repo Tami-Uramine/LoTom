@@ -117,7 +117,7 @@
 &kp TAB     &kp Q         &kp W     &kp E  &kp R  &kp T        &kp Y       &kp U      &kp I                    &kp O                     &kp P               &kp BACKSPACE
 &kp CAPS    &kp A         &kp S     &kp D  &kp F  &kp G        &kp H       &kp J      &kp K                    &lt 2 L                   &lt_zoom 0 SLASH    &kp ENTER
 &kp LSHFT   &kp Z         &kp X     &kp C  &kp V  &kp B        &kp N       &kp M      &kp COMMA                &kp PERIOD                &mt LCTRL UP_ARROW  &mt RSHIFT DOWN_ARROW
-&kp LCTRL   &kp LEFT_GUI  &kp LALT  &mo 7  &mo 6  &lt 5 SPACE  &lt 7 HOME  &lt 4 END  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_GUI RIGHT_ARROW
+&kp LCTRL   &kp LEFT_GUI  &kp LALT  &mo 8  &mo 6  &lt 5 SPACE  &lt 7 HOME  &lt 4 END  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_GUI RIGHT_ARROW
             >;
 
             sensor-bindings =
@@ -205,7 +205,7 @@
                 <&scroll_up_down>;
         };
 
-        GREEN {
+        FUNCTION {
             bindings = <
 &trans        &trans
 &trans        &trans        &trans        &trans  &trans  &trans  &kp F1   &kp F2   &kp F3              &kp F4               &kp F5            &trans
@@ -217,6 +217,16 @@
             sensor-bindings =
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
                 <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
+        };
+
+        GREEN {
+            bindings = <
+&trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
