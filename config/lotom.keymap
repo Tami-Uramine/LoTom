@@ -43,6 +43,24 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&mkp>;
         };
+
+        // レイヤー3に切り替えている間だけ、Ctrlを強制的に付与する設定
+        zoom_layer: zoom_layer {
+            compatible = "zmk,behavior-layer-modifier";
+            #binding-cells = <0>;
+            layers = <3>;           // 切り替え先のレイヤー番号
+            modifiers = <MOD_LCTL>; // 付与するモディファイア
+        };
+        
+        // SLASHキーにこの挙動を割り当てる（ホールドで上記の設定、タップでSLASH）
+        lt_zoom: lt_zoom {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&zoom_layer>, <&kp>;
+        };
+
     };
 
     macros {
