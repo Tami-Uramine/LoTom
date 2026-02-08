@@ -11,8 +11,10 @@
         23 // K
         24 // l
         25 // /
-        27 // shift
-        39 // ctl
+        27 // lshift
+        37 // rctl
+        38 // rshift
+        39 // lctl
     >;
 };
 
