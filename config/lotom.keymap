@@ -43,7 +43,6 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&mkp>;
         };
-
     };
 
     macros {
@@ -77,7 +76,6 @@
                 <&to 0>,
                 <&macro_tap>;
         };
-
     };
 
     combos {
@@ -95,9 +93,9 @@
         default_layer {
             bindings = <
 &kp ESCAPE  &kp DELETE
-&kp TAB     &kp Q         &kp W     &kp E               &kp R             &kp T        &kp Y       &kp U      &kp I                    &kp O                     &kp P                 &kp BACKSPACE
-&kp CAPS    &kp A         &kp S     &kp D               &kp F             &kp G        &kp H       &kp J      &kp K                    &lt 2 L                   &mo_ctrl_tap 0 SLASH  &kp ENTER
-&kp LSHFT   &kp Z         &kp X     &kp C               &kp V             &kp B        &kp N       &kp M      &kp COMMA                &kp PERIOD                &mt LCTRL UP_ARROW    &mt RSHIFT DOWN_ARROW
+&kp TAB     &kp Q         &kp W     &kp E               &kp R             &kp T        &kp Y       &kp U      &kp I                    &kp O                     &kp P               &kp BACKSPACE
+&kp CAPS    &kp A         &kp S     &kp D               &kp F             &kp G        &kp H       &kp J      &kp K                    &lt 2 L                   &lt 3 SLASH         &kp ENTER
+&kp LSHFT   &kp Z         &kp X     &kp C               &kp V             &kp B        &kp N       &kp M      &kp COMMA                &kp PERIOD                &mt LCTRL UP_ARROW  &mt RSHIFT DOWN_ARROW
 &kp LCTRL   &kp LEFT_GUI  &kp LALT  &lt 7 INT_MUHENKAN  &lt 6 INT_HENKAN  &lt 5 SPACE  &lt 7 HOME  &lt 4 END  &mt LEFT_ALT LEFT_ARROW  &mt LEFT_GUI RIGHT_ARROW
             >;
 
@@ -109,9 +107,9 @@
         MOUSE {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans            &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &lt_mouse 2 MCLK  &ctrl_layer3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans            &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans            &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &lt_mouse 2 MCLK  &mo 3   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans            &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
             >;
 
