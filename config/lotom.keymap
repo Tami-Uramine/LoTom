@@ -51,7 +51,8 @@
             tapping-term-ms = <200>;  // ホールドと判定されるまでの時間（ミリ秒）
             quick-tap-ms = <0>;
             bindings = <&ctrl_layer3>, <&kp>;
- // ホールドでマクロ、タップでキー入力
+
+            // ホールドでマクロ、タップでキー入力
         };
     };
 
@@ -98,12 +99,19 @@
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&kp LCTRL &mo 3>;
-         // キーを離した時：CtrlとL3をOFF
-        };
 
+            // キーを離した時：CtrlとL3をOFF
+        };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        to0 {
+            bindings = <&to 0>;
+            key-positions = <21 22>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
