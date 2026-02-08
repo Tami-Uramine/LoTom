@@ -14,8 +14,6 @@
         27 // shift
         39 // ctl
     >;
-
-    require-prior-idle-ms = <200>;
 };
 
 / {
