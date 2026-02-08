@@ -156,7 +156,7 @@
                 <&scroll_up_down>;
         };
 
-        SPACE {
+        ORANGE {
             bindings = <
 &trans  &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7      &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0   &trans
@@ -170,7 +170,7 @@
                 <&scroll_up_down>;
         };
 
-        MARK {
+        ORANGE+SHIFT {
             bindings = <
 &trans  &trans
 &trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(NUMBER_5)  &kp RS(NUMBER_6)  &kp RS(NUMBER_7)      &kp RS(NUMBER_8)      &kp RS(NUMBER_9)       &kp RS(NUMBER_0)   &trans
