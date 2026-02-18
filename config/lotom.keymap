@@ -104,7 +104,7 @@
 
         to0 {
             bindings = <&to 0>;
-            key-positions = <22 21>;
+            key-positions = <21 23>;
         };
     };
 
