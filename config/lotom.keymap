@@ -236,10 +236,10 @@
         layer_9 {
             bindings = <
 &kp ESCAPE  &kp DELETE
-&kp Q       &kp W         &kp E         &kp R                &kp T        &mo 6      &kp BACKSLASH     &kp Y            &kp U                      &kp I                       &kp O    &kp P
-&kp A       &kp S         &kp D         &kp F                &kp G        &mo 6      &kp SEMICOLON     &kp H            &kp J                      &lt 2 K                     &kp L    &mt LCTRL MINUS
-&kp Z       &kp X         &kp C         &kp V                &kp B        &kp GRAVE  &kp SINGLE_QUOTE  &kp N            &kp M                      &kp COMMA                   &kp DOT  &mt LEFT_SHIFT SLASH
-&kp LCTRL   &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_SHIFT CAPS  &lt 4 SPACE  &lt 5 TAB  &lt 5 ENTER       &lt 6 BACKSPACE  &mt LEFT_ALT LEFT_BRACKET  &mt LEFT_GUI RIGHT_BRACKET
+&kp Q       &kp W         &kp E         &kp R                &kp T        &kp INT_MUHENKAN  &kp BACKSLASH     &kp Y            &kp U                      &kp I                       &kp O    &kp P
+&kp A       &kp S         &kp D         &kp F                &kp G        &kp INT_HENKAN    &kp SEMICOLON     &kp H            &kp J                      &lt 2 K                     &kp L    &mt LCTRL MINUS
+&kp Z       &kp X         &kp C         &kp V                &kp B        &kp GRAVE         &kp SINGLE_QUOTE  &kp N            &kp M                      &kp COMMA                   &kp DOT  &mt LEFT_SHIFT SLASH
+&kp LCTRL   &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_SHIFT CAPS  &lt 4 SPACE  &lt 5 TAB         &lt 5 ENTER       &lt 6 BACKSPACE  &mt LEFT_ALT LEFT_BRACKET  &mt LEFT_GUI RIGHT_BRACKET
             >;
         };
 
@@ -249,7 +249,7 @@
 &trans  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &trans            &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
 &trans  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans  &trans  &kp ESCAPE            &kp PERIOD             &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mt LCTRL MINUS
 &trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans  &trans  &kp TAB               &kp NUMBER_0           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mt LEFT_SHIFT SLASH
-&trans  &trans            &trans            &trans            &trans  &trans  &trans                &trans                 &kp EQUAL     &kp ASTERISK
+&trans  &trans            &trans            &trans            &trans  &trans  &kp CAPS              &trans                 &kp EQUAL     &kp ASTERISK
             >;
 
             >;
