@@ -7,14 +7,14 @@
 
 &zip_temp_layer {
     excluded-positions = <
-        21 // J
-        22 // K
-        23 // l
-        24 // /
-        26 // lshift
-        36 // rctl
-        37// rshift
-        38 // lctl
+        22 // J
+        23 // K
+        24 // l
+        25 // -
+        34 // m
+        35 // ,
+        37 // /
+        46 // [
     >;
 };
 
