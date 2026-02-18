@@ -165,11 +165,11 @@
 
         NUM+ARROW {
             bindings = <
-&trans  &kp COLON
-&trans  &trans          &kp UP_ARROW    &trans           &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(EQUAL)
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &kp ESCAPE            &kp PERIOD             &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mt LCTRL MINUS
-&trans  &trans          &trans          &trans           &trans  &trans  &kp TAB               &kp NUMBER_0           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mt LEFT_SHIFT SLASH
-&trans  &trans          &trans          &trans           &trans  &trans  &kp CAPS              &trans                 &kp EQUAL     &kp ASTERISK
+&trans  &kp LS(SEMICOLON)
+&trans  &trans             &kp UP_ARROW    &trans           &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(EQUAL)
+&trans  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &kp ESCAPE            &kp PERIOD             &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mt LCTRL MINUS
+&trans  &trans             &trans          &trans           &trans  &trans  &kp TAB               &kp NUMBER_0           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mt LEFT_SHIFT SLASH
+&trans  &trans             &trans          &trans           &trans  &trans  &kp CAPS              &trans                 &kp EQUAL     &kp ASTERISK
             >;
 
             sensor-bindings =
