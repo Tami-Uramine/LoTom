@@ -155,7 +155,7 @@
             >;
         };
 
-        NUM+ARROW {
+        NUM {
             bindings = <
 &trans  &kp EQUAL
 &trans  &trans     &trans          &kp UP_ARROW    &trans           &kp BACKSLASH     &kp ESCAPE    &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9           &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)
@@ -169,18 +169,28 @@
                 <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
-        FUNCTION+BT {
+        FUNCTION {
             bindings = <
 &trans        &trans
-&trans        &trans        &trans          &kp UP_ARROW    &trans        &trans  &kp F1  &kp F2  &kp F3   &kp F4  &kp F5  &kp F5
-&bt BT_SEL 0        &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW        &trans  &kp F6  &kp F7  &kp F8   &kp F9  &kp F10  &kp F10
-&bt BT_SEL 1        &trans        &trans         &trans        &trans        &trans  &trans                &trans  &trans  &trans   &trans  &kp F11
-&bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans                &trans  &trans  &kp F12
+&trans        &trans        &trans              &kp LS(UP_ARROW)    &trans               &trans  &kp F1           &kp F2                &kp F3   &kp F4  &kp F5   &trans
+&bt BT_SEL 0  &trans        &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans  &kp F6           &kp F7                &kp F8   &kp F9  &kp F10  &trans
+&bt BT_SEL 1  &trans        &trans              &trans              &trans               &trans  &kp PRINTSCREEN  &kp LS(LG(NUMBER_4))  &trans   &trans  &kp F11  &trans
+&bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &trans              &trans               &trans  &trans           &trans                &kp F12  &trans
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
