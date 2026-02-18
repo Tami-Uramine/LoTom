@@ -246,8 +246,8 @@
         layer_10 {
             bindings = <
 &trans  &kp COLON
-&trans  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &trans            &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
-&trans  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans  &trans  &kp ESCAPE            &kp PERIOD             &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mt LCTRL MINUS
+&trans  &kp LS(NUMBER_7)  &kp UP_ARROW      &trans            &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS
+&trans  &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT_ARROW   &trans  &trans  &kp ESCAPE            &kp PERIOD             &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &mt LCTRL MINUS
 &trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans  &trans  &kp TAB               &kp NUMBER_0           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &mt LEFT_SHIFT SLASH
 &trans  &trans            &trans            &trans            &trans  &trans  &kp CAPS              &trans                 &kp EQUAL     &kp ASTERISK
             >;
@@ -267,11 +267,11 @@
 
         layer_12 {
             bindings = <
-&trans                                                                                          &trans
-&kp ESCAPE  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp F12     &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp F12     &trans  &trans  &trans  &trans  &trans      &trans  &trans                  &trans  &trans
+&trans      &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F12     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F12     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
