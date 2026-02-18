@@ -128,10 +128,10 @@
         MOUSE {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans            &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &lt_mouse 2 MCLK  &zoom_ctrl_on  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans            &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans            &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK     &lt_mouse 2 MCLK  &mkp RCLK  &kp LCTRL
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4      &trans            &mkp MB5   &kp LEFT_SHIFT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ALT  &trans
             >;
 
             sensor-bindings =
