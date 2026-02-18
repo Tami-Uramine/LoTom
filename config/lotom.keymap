@@ -113,11 +113,11 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE  &kp DELETE
-&kp TAB       &kp Q       &kp W         &kp E         &kp R                &kp T     &kp Y            &kp U                      &kp I                       &kp O    &kp P    &kp BACKSPACE
-&kp CAPS       &kp A       &kp S         &kp D         &kp F                &kp G  &kp H            &kp J                      &kp K                       &lt 2 L                       &kp MINUS  &kp ENTER
-&kp LEFT_SHIFT       &kp Z       &kp X         &kp C         &kp V                &kp B         &kp N            &kp M                      &kp COMMA                   &kp DOT                   &kp SLASH  &kp LEFT_SHIFT
-&kp LCTRL   &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_SHIFT CAPS  &lt 4 SPACE  &lt 5 TAB         &lt 5 ENTER    &lt 4 BACKSPACE  &mt LEFT_ALT LEFT_BRACKET  &mt LEFT_GUI RIGHT_BRACKET
+&kp ESCAPE      &kp DELETE
+&kp TAB         &kp Q         &kp W         &kp E                &kp R        &kp T      &kp Y        &kp U            &kp I                      &kp O                       &kp P             &kp BACKSPACE
+&kp CAPS        &kp A         &kp S         &kp D                &kp F        &kp G      &kp H        &kp J            &kp K                      &lt 2 L                     &lt_zoom 0 MINUS  &kp ENTER
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C                &kp V        &kp B      &kp N        &kp M            &kp COMMA                  &kp DOT                     &mt LCTRL SLASH   &kp LEFT_SHIFT
+&kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_SHIFT CAPS  &lt 4 SPACE  &lt 5 TAB  &lt 5 ENTER  &lt 4 BACKSPACE  &mt LEFT_ALT LEFT_BRACKET  &mt LEFT_GUI RIGHT_BRACKET
             >;
 
             sensor-bindings =
