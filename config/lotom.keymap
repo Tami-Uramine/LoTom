@@ -235,11 +235,11 @@
 
         layer_9 {
             bindings = <
-&kp ESCAPE  &kp BACKSPACE
-&kp Q       &kp W          &kp E             &kp R           &kp T        &mo 6             &kp BACKSLASH      &kp Y        &kp U         &kp I              &kp O    &kp P
-&kp A       &kp S          &kp D             &kp F           &kp G        &mo 6             &kp BACKSLASH      &kp H        &kp J         &kp K              &kp L    &kp MINUS
-&kp Z       &kp X          &kp C             &kp V           &kp B        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N        &kp M         &kp COMMA          &kp DOT  &kp SLASH
-&kp LCTRL   &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LEFT_SHIFT  &lt 4 SPACE  &kp LG(SPACE)     &lt 5 SPACE        &lt 6 ENTER  &lt 2 ESCAPE  &kp RIGHT_BRACKET
+&kp ESCAPE  &kp DELETE
+&kp Q       &kp W         &kp E         &kp R                &kp T        &mo 6      &kp BACKSLASH     &kp Y            &kp U                      &kp I                       &kp O    &kp P
+&kp A       &kp S         &kp D         &kp F                &kp G        &mo 6      &kp SEMICOLON     &kp H            &kp J                      &lt 2 K                     &kp L    &mt LCTRL MINUS
+&kp Z       &kp X         &kp C         &kp V                &kp B        &kp GRAVE  &kp SINGLE_QUOTE  &kp N            &kp M                      &kp COMMA                   &kp DOT  &mt LEFT_SHIFT SLASH
+&kp LCTRL   &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_SHIFT CAPS  &lt 4 SPACE  &lt 5 TAB  &lt 5 ENTER       &lt 6 BACKSPACE  &mt LEFT_ALT LEFT_BRACKET  &mt LEFT_GUI RIGHT_BRACKET
             >;
         };
 
@@ -257,11 +257,11 @@
 
         layer_11 {
             bindings = <
-&trans                                                                                       &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                  &trans  &kp F12
+&trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans   &kp F1  &kp F2  &kp F3   &kp F4  &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans  &kp F13  &kp F6  &kp F7  &kp F8   &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans   &trans  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &kp F12
             >;
         };
     };
