@@ -158,10 +158,10 @@
         NUM {
             bindings = <
 &trans  &kp EQUAL
-&trans  &trans     &trans          &kp UP_ARROW    &trans           &kp BACKSLASH     &kp ESCAPE  &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9           &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)
-&trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMICOLON     &kp TAB     &kp NUMBER_4  &kp NUMBER_5          &kp NUMBER_6           &kp MINUS          &kp LS(EQUAL)
-&trans  &trans     &trans          &trans          &trans           &kp SINGLE_QUOTE  &kp PERIOD  &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3           &kp SLASH          &mt LEFT_SHIFT ASTERISK
-&trans  &trans     &trans          &trans          &trans           &trans            &trans      &kp N0        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans  &trans     &trans          &kp UP_ARROW    &trans           &kp BACKSLASH     &kp ESCAPE    &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9           &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)
+&trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMICOLON     &kp TAB       &kp NUMBER_4  &kp NUMBER_5          &kp NUMBER_6           &kp MINUS          &kp LS(EQUAL)
+&trans  &trans     &trans          &trans          &trans           &kp SINGLE_QUOTE  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3           &kp SLASH          &mt LEFT_SHIFT ASTERISK
+&trans  &trans     &trans          &trans          &trans           &trans            &trans        &kp PERIOD    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
 
             sensor-bindings =
