@@ -101,6 +101,14 @@
 
             // ホールドでレイヤー、タップでTap-Dance
         };
+
+        // スクロールスピードを半分にするプロセッサ
+        zip_slow: zip_slow {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = "input-processor-scaler";
+        };
+
     };
 
     macros {
@@ -212,6 +220,10 @@
         };
 
         ZOOM {
+
+            // この行を追記 (分子 1, 分母 2 で 0.5倍の意味)
+            input-processors = <&zip_slow 1 2>;
+
             bindings = <
 &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
@@ -219,6 +231,10 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
             >;
+
+            // このレイヤーにいる間、縦のみ許可するプロセッサを通す
+            input-processors = <&zip_v_only>;
+
         };
 
         NUM {
