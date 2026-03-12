@@ -95,6 +95,23 @@
         };
     };
 
+    zip_keybind_arrows: zip_keybind_arrows {
+        compatible = "zmk,input-processor-keybind";
+        #input-processor-cells = <0>;
+        track_remainders;
+        bindings = <&kp RIGHT>,
+                  <&kp LEFT>,
+                  <&kp DOWN>,
+                  <&kp UP>;
+        tick = <40>;
+        wait-ms = <0>;
+        tap-ms = <10>;
+        // mode = <1>
+        // threshold = <10>
+        // max_threshold = <200>
+        // max_pending_activations = <10>
+    };
+
 };
 
 &trackball_listener {
@@ -132,6 +149,15 @@
             &zip_scroll_snap
             >;
     };
+
+    // レイヤー 5 (TRACKBALL_4ARROW) : 上下左右矢印
+    4arrows {
+        layers = <5>;
+        input-processors = <
+            &zip_keybind_arrows
+            &zip_scroll_scaler 0 1
+            &zip_scroll_snap
+            >;
 };
 
 
