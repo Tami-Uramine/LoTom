@@ -182,6 +182,34 @@
                 <&macro_release>,
                 <&kp LCTRL>;
         };
+
+        div_symbol: divi_symbol {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N7>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "DIVI_SYMBOL";
+        };
+
+        mul_symbol: mul_symbol {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "MUL_SYMBOL";
+        };
     };
 
     combos {
