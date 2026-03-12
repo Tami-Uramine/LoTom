@@ -13,9 +13,10 @@
         23 // l
         24 // -
         36 // /
-        37 // shift
-        46 // [
-        47 // ]
+        37 // right shift
+        38 // left ctl
+        40 // left alt
+        46 // right alt
     >;
 };
 
