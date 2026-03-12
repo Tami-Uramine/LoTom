@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/englmaxi
     - name: te9no
       url-base: https://github.com/te9no
+    - name: kot149
+      url-base: https://github.com/kot149
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -27,5 +29,8 @@ manifest:
     - name: zmk-nice-oled
       remote: mctechnology17
       revision: main
+    - name: zmk-scroll-snap
+      remote: kot149
+      revision: v1
   self:
     path: config
