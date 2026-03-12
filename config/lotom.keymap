@@ -190,6 +190,10 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans       &mkp LCLK      &trans  &mkp RCLK  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP  &kp PAGE_DOWN  &trans  &trans
+
+            // このレイヤーにいる間、縦のみ許可するプロセッサを通す
+            input-processors = <&zip_v_only>;
+
             >;
         };
 
@@ -200,6 +204,10 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK  &mkp MCLK  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp END    &trans     &trans
+
+            // このレイヤーにいる間、横のみ許可するプロセッサを通す
+            input-processors = <&zip_h_only>;
+
             >;
         };
 
