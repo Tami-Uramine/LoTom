@@ -118,6 +118,22 @@
             tapping-term-ms = <200>;
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
         };
+
+        td_tab: tap_dance_tab {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_PARENTHESIS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp TAB>, <&kp LS(TAB)>;
+        };
+
+        td_enter: tap_dance_enter {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_PARENTHESIS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp ENTER>, <&kp LS(ENTER)>;
+        };
     };
 
     macros {
