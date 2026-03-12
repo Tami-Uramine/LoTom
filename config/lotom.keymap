@@ -166,6 +166,14 @@
             tapping-term-ms = <200>;
             bindings = <&kp LC(Z)>, <&kp LC(Y)>;
         };
+
+        td_alt_left_right: tap_dance_alt_left_right {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_ALT_LEFT_RIGHT";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LA(LEFT_ARROW)>, <&kp LA(RIGHT_ARROW)>;
+        };
     };
 
     macros {
