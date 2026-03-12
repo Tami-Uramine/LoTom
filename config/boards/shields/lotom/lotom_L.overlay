@@ -11,8 +11,6 @@
         22 // K
         23 // l
         24 // -
-        33 // m
-        35 // .
         36 // /
         37 // shift
         46 // [
@@ -84,7 +82,7 @@
     input-processors = <&zip_temp_layer 1 1000000>;
 
     scroll {
-        layers = <2 3>;
+        layers = <2 3 4>;
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
     };
 
