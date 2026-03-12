@@ -90,7 +90,7 @@
         zip_slow: zip_slow {
             compatible = "zmk,input-processor-scaler";
             #input-processor-cells = <2>;
-            type = "input-processor-scaler";
+            type = <INPUT_PROCESSOR_SCALER>;
         };
 
         zip_v_only: zip_v_only {
