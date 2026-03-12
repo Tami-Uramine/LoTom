@@ -70,33 +70,30 @@
         triggers-per-rotation = <10>;
     };
 
-    /* ここに behaviors 定義を移動 */
-    behaviors {
-        zip_slow: zip_slow {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
-            type = <1>;
-            codes = <0x00 0x01 0x08 0x06>;
-        };
-
-        zip_v_only: zip_v_only {
-            compatible = "zmk,input-processor-intercept";
-            #input-processor-cells = <1>;
-            x-modifier = <0>;
-        };
-
-        zip_h_only: zip_h_only {
-            compatible = "zmk,input-processor-intercept";
-            #input-processor-cells = <1>;
-            y-modifier = <0>;
-        };
-    };
-
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackball_split>;
     };
+
+    input_processors {
+        zip_scroll_x_scaler: zip_scroll_x_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_HWHEEL>;
+            track-remainders;
+        };
+
+        zip_scroll_y_scaler: zip_scroll_y_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_WHEEL>;
+            track-remainders;
+        };
+    };
+
 };
 
 &trackball_listener {
@@ -107,33 +104,29 @@
     // レイヤー 2 (SCROLL) : 縦スクロールのみ
     scroll_v {
         layers = <2>;
-        input-processors = 
-            <&zip_v_only 0>, // 末尾に 0 を追加
-            <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
-            <&zip_xy_scaler 1 16>, 
-            <&zip_xy_to_scroll_mapper>;
+        input-processors = <
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_x_scaler 0 1
+            >;
     };
 
     // レイヤー 3 (SIDE_SCROLL) : 横スクロールのみ
     scroll_h {
         layers = <3>;
-        input-processors = 
-            <&zip_h_only 0>, // 末尾に 0 を追加
-            <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
-            <&zip_xy_scaler 1 16>, 
-            <&zip_xy_to_scroll_mapper>;
+        input-processors = <
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_y_scaler 0 1
+            >;
     };
 
     // レイヤー 4 (ZOOM) : 縦のみ ＋ スピード半分
     scroll_zoom {
         layers = <4>;
-        input-processors = 
-            <&zip_v_only 0>, // 末尾に 0 を追加
-            <&zip_slow 1 2>, 
-            <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
-            <&zip_xy_scaler 1 16>, 
-            <&zip_xy_to_scroll_mapper>;
-    };
+        input-processors = <
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_y_scaler 1 2
+            &zip_scroll_x_scaler 0 1
+            >;
 };
 
 
