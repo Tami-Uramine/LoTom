@@ -109,6 +109,21 @@
             #input-processor-cells = <2>;
             type = "input-processor-scaler";
         };
+
+        // 縦スクロールのみ：X軸（横）の入力を0にする
+        zip_v_only: zip_v_only {
+            compatible = "zmk,input-processor-intercept";
+            #input-processor-cells = <0>;
+            x-modifier = <0>; // 横方向を無効化
+        };
+
+        // 横スクロールのみ：Y軸（縦）の入力を0にする
+        zip_h_only: zip_h_only {
+            compatible = "zmk,input-processor-intercept";
+            #input-processor-cells = <0>;
+            y-modifier = <0>; // 縦方向を無効化
+        };
+
     };
 
     macros {
