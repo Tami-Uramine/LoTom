@@ -58,7 +58,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_IME";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp INT_HENKAN>, <&kp INT_MUHENKAN>;
         };
 
@@ -76,7 +76,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_HOME_END";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp HOME>, <&kp END>;
         };
 
@@ -115,7 +115,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_PARENTHESIS";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
         };
 
@@ -123,7 +123,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_TAB";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp TAB>, <&kp LS(TAB)>;
         };
 
@@ -131,7 +131,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_EBTER";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp ENTER>, <&kp LS(ENTER)>;
         };
 
@@ -139,7 +139,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MULTIPLE";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp ASTRK>, <&mul_symbol>;
         };
 
@@ -147,7 +147,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_DIVISION";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp SLASH>, <&div_symbol>;
         };
 
@@ -155,7 +155,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_COPY_CUT";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp LC(C)>, <&kp LC(X)>;
         };
 
@@ -163,7 +163,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_UNDO_REDO";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp LC(Z)>, <&kp LC(Y)>;
         };
 
@@ -171,7 +171,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_ALT_LEFT_RIGHT";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp LA(LEFT_ARROW)>, <&kp LA(RIGHT_ARROW)>;
         };
 
@@ -179,7 +179,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_ALT_UP_DOWN";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp LA(UP_ARROW)>, <&kp LA(DOWN_ARROW)>;
         };
 
@@ -187,7 +187,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_COLON";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp LS(SEMICOLON)>, <&kp SEMICOLON>;
         };
 
@@ -195,18 +195,28 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_QUOTE";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp LS(SINGLE_QUOTE)>, <&kp SINGLE_QUOTE>;
         };
 
-        th_tab_shift: tap_hold_tab_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_TAB_SHIFT";
-            #binding-cells = <1>;
+        th_tab: tap_hold_tab {
+            ccompatible = "zmk,behavior-hold-tap";
+            label = "TAP_HOLD_TAB";
+            #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&kp LEFT_SHIFT>, <&td_tab>;
+            bindings = <&kp>, <&td_tab>; // 1番目が長押し(Hold)、2番目が短押し(Tap)
+        };
+
+        th_enter: tap_hold_enter {
+            ccompatible = "zmk,behavior-hold-tap";
+            label = "TAP_HOLD_ENTER";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&td_enter>; // 1番目が長押し(Hold)、2番目が短押し(Tap)
         };
     };
 
