@@ -182,6 +182,22 @@
             tapping-term-ms = <200>;
             bindings = <&kp LA(UP_ARROW)>, <&kp LA(DOWN_ARROW)>;
         };
+
+        td_colon: tap_dance_colon {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_COLON";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LS(SEMICOLON)>, <&kp SEMICOLON>;
+        };
+
+        td_quote: tap_dance_quote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_QUOTE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LS(SINGLE_QUOTE)>, <&kp SINGLE_QUOTE>;
+        };
     };
 
     macros {
