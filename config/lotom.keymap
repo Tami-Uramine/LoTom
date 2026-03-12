@@ -304,11 +304,11 @@
 
         MOUSE {
             bindings = <
-&trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans            &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &lt_mouse 2 MCLK  &lt_mouse 3 RCLK  &zoom_ctrl_on  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans            &kp LCTRL      &kp LEFT_SHIFT
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp LEFT_ALT      &kp LEFT_GUI
+&trans     &trans
+&trans     &trans  &trans        &trans  &trans  &trans  &trans  &trans     &trans            &trans            &trans         &trans
+&trans     &trans  &trans        &trans  &trans  &trans  &trans  &mkp LCLK  &lt_mouse 2 MCLK  &lt_mouse 3 RCLK  &zoom_ctrl_on  &trans
+&trans     &trans  &trans        &trans  &trans  &trans  &trans  &trans     &trans            &trans            &kp LCTRL      &kp LEFT_SHIFT
+&kp LCTRL  &trans  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &trans     &kp LEFT_ALT      &kp LEFT_GUI
             >;
         };
 
