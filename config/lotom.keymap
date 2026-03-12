@@ -94,6 +94,7 @@
             #input-processor-cells = <2>;
             type = <1>; // 直接数値を指定
             // ↓ この行を追加：X軸、Y軸、ホイール、横ホイールすべてを対象にする
+
             codes = <0x00 0x01 0x08 0x06>;
         };
 
@@ -173,9 +174,9 @@
         default_layer {
             bindings = <
 &kp ESCAPE           &kp DELETE
-&kp GRAVE            &kp Q         &kp W         &kp E             &kp R        &kp T        &kp Y        &kp U        &kp I                      &kp O                       &kp P             &kp BACKSPACE
+&kp LS(GRAVE)        &kp Q         &kp W         &kp E             &kp R        &kp T        &kp Y        &kp U        &kp I                      &kp O                       &kp P             &kp BACKSPACE
 &kp TAB              &kp A         &kp S         &kp D             &kp F        &kp G        &kp H        &kp J        &lt 2 K                    &lt 3 L                     &lt_zoom 0 MINUS  &kp ENTER
-&mt LEFT_SHIFT CAPS  &kp Z         &kp X         &kp C             &kp V        &kp B        &kp N        &kp M        &kp COMMA                  &kp DOT                     &mt LCTRL SLASH   &mt LEFT_SHIFT LS(GRAVE)
+&mt LEFT_SHIFT CAPS  &kp Z         &kp X         &kp C             &kp V        &kp B        &kp N        &kp M        &kp COMMA                  &kp DOT                     &mt LCTRL SLASH   &kp LEFT_SHIFT
 &kp LCTRL            &kp LEFT_GUI  &kp LEFT_ALT  &th_home_end 7 0  &th_ime 6 0  &lt 5 SPACE  &lt 5 SPACE  &th_ime 7 0  &mt LEFT_ALT LEFT_BRACKET  &mt LEFT_GUI RIGHT_BRACKET
             >;
 
