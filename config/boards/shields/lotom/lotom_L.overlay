@@ -150,8 +150,8 @@
             >;
     };
 
-    // レイヤー 5 (TRACKBALL_4ARROW) : 上下左右矢印
-    4arrows {
+    // レイヤー 5 (TRACKBALL_4_WAY_ARROW) : 上下左右矢印
+    4_way_arrow {
         layers = <5>;
         input-processors = <
             &zip_keybind_arrows
