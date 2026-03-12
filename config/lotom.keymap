@@ -14,6 +14,7 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
 
@@ -22,6 +23,7 @@
             label = "ENCODER_TAB_SLIDE";
             #sensor-binding-cells = <0>;
             bindings = <&kp LA(LG(RIGHT_ARROW))>, <&kp LA(LG(LEFT_ARROW))>;
+
             tap-ms = <20>;
         };
 
@@ -112,11 +114,15 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>, <&mkp MB1>,
+                <&macro_press>,
+                <&mkp MB1>,
                 <&macro_pause_for_release>,
-                <&macro_release>, <&mkp MB1>,
-                <&macro_tap>, <&to 0>,
-                <&macro_tap>, <&sl_mouse 0>;
+                <&macro_release>,
+                <&mkp MB1>,
+                <&macro_tap>,
+                <&to 0>,
+                <&macro_tap>,
+                <&sl_mouse 0>;
         };
 
         rclick_and_exit: rclick_and_exit {
@@ -124,10 +130,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>, <&mkp MB2>,
+                <&macro_press>,
+                <&mkp MB2>,
                 <&macro_pause_for_release>,
-                <&macro_release>, <&mkp MB2>,
-                <&macro_tap>, <&to 0>,
+                <&macro_release>,
+                <&mkp MB2>,
+                <&macro_tap>,
+                <&to 0>,
                 <&macro_tap>;
         };
 
@@ -135,16 +144,21 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>, <&mo 4>,
-                <&macro_press>, <&kp LCTRL>,
+                <&macro_press>,
+                <&mo 4>,
+                <&macro_press>,
+                <&kp LCTRL>,
                 <&macro_pause_for_release>,
-                <&macro_release>, <&mo 4>,
-                <&macro_release>, <&kp LCTRL>;
+                <&macro_release>,
+                <&mo 4>,
+                <&macro_release>,
+                <&kp LCTRL>;
         };
     };
 
     combos {
         compatible = "zmk,combos";
+
         to0 {
             bindings = <&to 0>;
             key-positions = <21 23>;
@@ -159,10 +173,13 @@
 &kp ESCAPE           &kp DELETE
 &kp GRAVE            &kp Q         &kp W         &kp E             &kp R        &kp T        &kp Y        &kp U        &kp I                      &kp O                       &kp P             &kp BACKSPACE
 &kp TAB              &kp A         &kp S         &kp D             &kp F        &kp G        &kp H        &kp J        &lt 2 K                    &lt 3 L                     &lt_zoom 0 MINUS  &kp ENTER
-&mt LEFT_SHIFT CAPS  &kp Z         &kp X         &kp C             &kp V        &kp B        &kp N        &kp M        &kp COMMA                  &kp DOT                     &mt LCTRL SLASH   &mt LEFT_SHIFT CAPS
+&mt LEFT_SHIFT CAPS  &kp Z         &kp X         &kp C             &kp V        &kp B        &kp N        &kp M        &kp COMMA                  &kp DOT                     &mt LCTRL SLASH   &kp LEFT_SHIFT
 &kp LCTRL            &kp LEFT_GUI  &kp LEFT_ALT  &th_home_end 7 0  &th_ime 6 0  &lt 5 SPACE  &lt 5 SPACE  &th_ime 7 0  &mt LEFT_ALT LEFT_BRACKET  &mt LEFT_GUI RIGHT_BRACKET
             >;
-            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>, <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+
+            sensor-bindings =
+                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
+                <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         MOUSE {
@@ -199,12 +216,14 @@
 
         ZOOM {
             // スピードを半分にし、かつ縦スクロールのみに制限
+
             input-processors = <&zip_slow 1 2>, <&zip_v_only>;
+
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &mkp LCLK      &mkp MCLK  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &mkp LCLK       &mkp MCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans     &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_UP  &msc SCRL_DOWN  &trans     &trans
             >;
         };
@@ -213,22 +232,28 @@
             bindings = <
 &trans  &kp EQUAL
 &trans  &trans     &trans          &kp UP_ARROW    &trans           &kp BACKSLASH     &kp ESCAPE    &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9           &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)
-&trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMICOLON     &kp TAB        &kp NUMBER_4  &kp NUMBER_5          &kp NUMBER_6           &kp MINUS          &kp LS(EQUAL)
+&trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMICOLON     &kp TAB       &kp NUMBER_4  &kp NUMBER_5          &kp NUMBER_6           &kp MINUS          &kp LS(EQUAL)
 &trans  &trans     &trans          &trans          &trans           &kp SINGLE_QUOTE  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2          &kp NUMBER_3           &kp SLASH          &mt LEFT_SHIFT ASTERISK
 &trans  &trans     &trans          &trans          &trans           &trans            &trans        &kp PERIOD    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
-            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>, <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+
+            sensor-bindings =
+                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
+                <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         SHIFT {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans              &kp LS(UP_ARROW)    &trans               &kp LS(BACKSLASH)     &trans            &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &trans
-&trans  &trans  &trans  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp LS(SEMICOLON)     &trans            &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans
-&trans  &trans  &trans  &trans              &trans              &trans               &kp LS(SINGLE_QUOTE)  &kp LS(NUMBER_0)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans
-&trans  &trans  &trans              &trans              &trans               &trans                &trans            &trans            &trans            &trans
+&trans  &trans  &trans              &kp LS(UP_ARROW)    &trans               &kp LS(BACKSLASH)     &trans            &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &trans  &trans
+&trans  &trans  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp LS(SEMICOLON)     &trans            &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans  &trans
+&trans  &trans  &trans              &trans              &trans               &kp LS(SINGLE_QUOTE)  &kp LS(NUMBER_0)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans  &trans
+&trans  &trans  &trans              &trans              &trans               &trans                &trans            &trans            &trans
             >;
-            sensor-bindings = <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>, <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+
+            sensor-bindings =
+                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
+                <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         FUNCTION {
@@ -236,10 +261,13 @@
 &trans        &kp LC(S)
 &bt BT_CLR    &trans        &trans              &kp LG(UP_ARROW)    &trans               &trans  &kp F1   &kp F2   &kp F3           &kp F4                &kp F5     &kp LC(Y)
 &bt BT_SEL 0  &trans        &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &kp F6   &kp F7   &kp F8           &kp F9                &kp F10    &kp LC(Z)
-&bt BT_SEL 1  &trans        &trans              &kp LG(D)            &trans               &trans  &kp F11  &kp F12  &kp PRINTSCREEN  &kp LS(LG(NUMBER_4))  &kp LC(C)  &kp LC(V)
+&bt BT_SEL 1  &trans        &trans              &kp LG(D)           &trans               &trans  &kp F11  &kp F12  &kp PRINTSCREEN  &kp LS(LG(NUMBER_4))  &kp LC(C)  &kp LC(V)
 &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &trans              &trans               &trans  &trans   &trans   &kp LC(X)        &kp LC(A)
             >;
-            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>, <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+
+            sensor-bindings =
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
     };
 };
