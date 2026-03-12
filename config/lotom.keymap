@@ -45,7 +45,6 @@
         };
 
         // SLASHキーの設定：ホールドでレイヤー3(Ctrl付き)、タップでSLASH
-
         lt_zoom: lt_zoom {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -53,6 +52,45 @@
             tapping-term-ms = <200>;
             bindings = <&zoom_ctrl_on>, <&kp>;
         };
+        
+        // Step 1: 1回押しと2回押しを区別するTap-Dance
+        td_ime: tap_dance_ime {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_IME";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp INT_HENKAN>, <&kp INT_MUHENKAN>; // 1回で変換、2回で無変換
+        };
+
+        // Step 2: タップで上記のTap-Dance、ホールドでレイヤー(例: レイヤー1)
+        th_ime: tap_hold_ime {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_IME";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&td_ime>; // ホールドでレイヤー、タップでTap-Dance
+        };
+
+        td_home_end: tap_dance_home_end {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_HOME_END";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp INT_home>, <&kp INT_end>; // 1回でHOME、2回でEND
+        };
+
+        th_home_end: tap_hold_home_end {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_HOME_END";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&td_home_end>; // ホールドでレイヤー、タップでTap-Dance
+        };
+
     };
 
     macros {
