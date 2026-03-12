@@ -94,7 +94,7 @@
             #input-processor-cells = <2>;
             type = <1>; // 直接数値を指定
             // ↓ この行を追加：X軸、Y軸、ホイール、横ホイールすべてを対象にする
-            codes = <INPUT_REL_X | INPUT_REL_Y | INPUT_REL_WHEEL | INPUT_REL_HWHEEL>;
+            codes = <0x00 0x01 0x08 0x06>;
         };
 
         zip_v_only: zip_v_only {
