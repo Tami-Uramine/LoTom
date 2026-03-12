@@ -156,7 +156,15 @@
             label = "TAP_DANCE_COPY_CUT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LS(C)>, <&kp LS(X)>;
+            bindings = <&kp LC(C)>, <&kp LC(X)>;
+        };
+
+        td_undo_redo: tap_dance_undo_redo {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_UNDO_REDO";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LC(Z)>, <&kp LC(Y)>;
         };
     };
 
