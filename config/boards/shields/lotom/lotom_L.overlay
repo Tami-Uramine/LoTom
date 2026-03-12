@@ -98,7 +98,7 @@
     zip_keybind_arrows: zip_keybind_arrows {
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>;
-        track_remainders;
+        track-remainders;
         bindings = <&kp RIGHT>,
                   <&kp LEFT>,
                   <&kp DOWN>,
