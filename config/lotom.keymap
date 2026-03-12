@@ -118,7 +118,6 @@
             tapping-term-ms = <200>;
             bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
         };
-
     };
 
     macros {
@@ -238,10 +237,10 @@
         NUM {
             bindings = <
 &trans  &kp EQUAL
-&trans  &trans     &trans          &kp UP_ARROW    &trans           &trans  &kp ESCAPE    &kp NUMBER_7  &kp NUMBER_8       &kp NUMBER_9          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp TAB       &kp NUMBER_4  &kp NUMBER_5       &kp NUMBER_6          &kp MINUS             &kp LS(EQUAL)
-&trans  &trans     &trans          &trans          &trans           &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2       &kp NUMBER_3          &kp SLASH             &mt LEFT_SHIFT ASTERISK
-&trans  &trans     &trans          &trans          &trans           &trans  &trans        &kp PERIOD    &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)
+&trans  &trans     &trans          &kp UP_ARROW    &trans           &trans  &kp ESCAPE    &kp NUMBER_7  &kp NUMBER_8       &kp NUMBER_9          &td_parenthesis  &kp RIGHT_PARENTHESIS
+&trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp TAB       &kp NUMBER_4  &kp NUMBER_5       &kp NUMBER_6          &kp MINUS        &kp LS(EQUAL)
+&trans  &trans     &trans          &trans          &trans           &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2       &kp NUMBER_3          &kp SLASH        &mt LEFT_SHIFT ASTERISK
+&trans  &trans     &trans          &trans          &trans           &trans  &trans        &trans        &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)
             >;
 
             sensor-bindings =
