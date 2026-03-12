@@ -303,9 +303,49 @@
     combos {
         compatible = "zmk,combos";
 
-        to0 {
-            bindings = <&to 0>;
-            key-positions = <21 23>;
+        shift_up {
+            bindings = <&kp LS(UP_ARROW)>;
+            key-positions = <24 44 10>;
+        };
+
+        shift_left {
+            bindings = <&kp LS(LEFT_ARROW)>;
+            key-positions = <24 44 21>;
+        };
+
+        shift_down {
+            bindings = <&kp LS(DOWN_ARROW)>;
+            key-positions = <24 44 22>;
+        };
+
+        shift_right {
+            bindings = <&kp LS(RIGHT_ARROW)>;
+            key-positions = <24 44 23>;
+        };
+
+        gui_up {
+            bindings = <&kp LG(UP_ARROW)>;
+            key-positions = <24 10 45>;
+        };
+
+        gui_left {
+            bindings = <&kp LG(LEFT_ARROW)>;
+            key-positions = <24 21 45>;
+        };
+
+        gui_down {
+            bindings = <&kp LG(DOWN_ARROW)>;
+            key-positions = <24 22 45>;
+        };
+
+        gui_right {
+            bindings = <&kp LG(RIGHT_ARROW)>;
+            key-positions = <24 23 45>;
+        };
+
+        gui_d {
+            bindings = <&kp LG(D)>;
+            key-positions = <24 45 34>;
         };
     };
 
