@@ -134,6 +134,22 @@
             tapping-term-ms = <200>;
             bindings = <&kp ENTER>, <&kp LS(ENTER)>;
         };
+
+        td_mul: tap_dance_mul {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_MULTIPLE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp ASTRK>, <&mul_symbol>;
+        };
+
+        td_div: tap_dance_div {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_DIVISION";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SLASH>, <&div_symbol>;
+        };
     };
 
     macros {
