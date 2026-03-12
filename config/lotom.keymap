@@ -103,12 +103,12 @@
         };
 
         // スクロールスピードを半分にするプロセッサ
+
         zip_slow: zip_slow {
             compatible = "zmk,input-processor-scaler";
             #input-processor-cells = <2>;
             type = "input-processor-scaler";
         };
-
     };
 
     macros {
@@ -194,13 +194,11 @@
         SCROLL {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &mkp LCLK      &trans  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP  &kp PAGE_DOWN  &trans  &trans
-
-            // このレイヤーにいる間、縦のみ許可するプロセッサを通す
-            input-processors = <&zip_v_only>;
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &mkp LCLK      &trans  &mkp RCLK     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP  &kp PAGE_DOWN  &trans  &trans input
+            >;
 
             >;
         };
@@ -208,33 +206,30 @@
         SIDE_SCROLL {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK  &mkp MCLK  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp END    &trans     &trans
-
-            // このレイヤーにいる間、横のみ許可するプロセッサを通す
-            input-processors = <&zip_h_only>;
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK  &mkp MCLK  &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp END    &trans     &trans input
+            >;
 
             >;
         };
 
         ZOOM {
-
             // この行を追記 (分子 1, 分母 2 で 0.5倍の意味)
-            input-processors = <&zip_slow 1 2>;
 
+            input-processors = <&zip_slow 1 2>;
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &mkp LCLK       &mkp MCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_UP  &msc SCRL_DOWN  &trans     &trans
             >;
 
             // このレイヤーにいる間、縦のみ許可するプロセッサを通す
-            input-processors = <&zip_v_only>;
 
+            input-processors = <&zip_v_only>;
         };
 
         NUM {
