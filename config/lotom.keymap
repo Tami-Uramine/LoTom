@@ -198,6 +198,16 @@
             tapping-term-ms = <200>;
             bindings = <&kp LS(SINGLE_QUOTE)>, <&kp SINGLE_QUOTE>;
         };
+
+        th_tab_shift: tap_hold_tab_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP_TAB_SHIFT";
+            #binding-cells = <1>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp LEFT_SHIFT>, <&td_tab>;
+        };
     };
 
     macros {
