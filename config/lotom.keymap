@@ -110,6 +110,15 @@
             #input-processor-cells = <1>; // 0 から 1 に変更
             y-modifier = <0>;
         };
+
+        td_parenthesis: tap_dance_parenthesis {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_PARENTHESIS";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+        };
+
     };
 
     macros {
