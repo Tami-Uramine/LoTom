@@ -79,13 +79,39 @@
 
 &trackball_listener {
     status = "okay";
+    // 全レイヤー共通の基本設定（必要あれば）
     input-processors = <&zip_temp_layer 1 1000000>;
 
-    scroll {
-        layers = <2 3 4>;
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 16>, <&zip_xy_to_scroll_mapper>;
+    // レイヤー 2 (SCROLL) : 縦スクロールのみ
+    scroll_v {
+        layers = <2>;
+        input-processors = 
+            <&zip_v_only>, // 縦のみに制限
+            <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
+            <&zip_xy_scaler 1 16>, 
+            <&zip_xy_to_scroll_mapper>;
     };
 
+    // レイヤー 3 (SIDE_SCROLL) : 横スクロールのみ
+    scroll_h {
+        layers = <3>;
+        input-processors = 
+            <&zip_h_only>, // 横のみに制限
+            <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
+            <&zip_xy_scaler 1 16>, 
+            <&zip_xy_to_scroll_mapper>;
+    };
+
+    // レイヤー 4 (ZOOM) : 縦のみ ＋ スピード半分
+    scroll_zoom {
+        layers = <4>;
+        input-processors = 
+            <&zip_v_only>,   // ← これを追加（縦のみに制限）
+            <&zip_slow 1 2>, // スピード半分
+            <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
+            <&zip_xy_scaler 1 16>, 
+            <&zip_xy_to_scroll_mapper>;
+    };
 };
 
 
