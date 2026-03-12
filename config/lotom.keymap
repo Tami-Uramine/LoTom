@@ -158,22 +158,6 @@
             tapping-term-ms = <200>;
             bindings = <&kp LC(C)>, <&kp LC(X)>;
         };
-
-        td_undo_redo: tap_dance_undo_redo {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_UNDO_REDO";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LC(Z)>, <&kp LC(Y)>;
-        };
-
-        td_alt_left_right: tap_dance_alt_left_right {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_ALT_LEFT_RIGHT";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LA(LEFT_ARROW)>, <&kp LA(RIGHT_ARROW)>;
-        };
     };
 
     macros {
@@ -349,8 +333,8 @@
         FUNCTION {
             bindings = <
 &trans        &kp LC(S)
-&bt BT_CLR    &trans        &trans              &kp LG(UP_ARROW)    &trans               &trans  &kp F1   &kp F2   &kp F3        &kp F4     &kp F5     &kp LC(Y)
-&bt BT_SEL 0  &trans        &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &kp F6   &kp F7   &kp F8        &kp F9     &kp F10    &kp LC(Z)
+&bt BT_CLR    &trans        &trans              &kp LG(UP_ARROW)    &trans               &trans  &kp F1   &kp F2   &kp F3        &kp F4     &kp F5     &kp F11
+&bt BT_SEL 0  &trans        &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &kp F6   &kp F7   &kp F8        &kp F9     &kp F10    &kp F12
 &bt BT_SEL 1  &trans        &trans              &kp LG(D)           &trans               &trans  &kp F11  &kp F12  &td_copy_cut  &kp LC(V)  &kp LC(A)  &kp LC(V)
 &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4        &trans              &trans               &trans  &trans   &trans   &kp LC(X)     &kp LC(A)
             >;
