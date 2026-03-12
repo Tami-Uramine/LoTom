@@ -86,7 +86,7 @@
     scroll_v {
         layers = <2>;
         input-processors = 
-            <&zip_v_only>, // 縦のみに制限
+            <&zip_v_only 0>, // 末尾に 0 を追加
             <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
             <&zip_xy_scaler 1 16>, 
             <&zip_xy_to_scroll_mapper>;
@@ -96,7 +96,7 @@
     scroll_h {
         layers = <3>;
         input-processors = 
-            <&zip_h_only>, // 横のみに制限
+            <&zip_h_only 0>, // 末尾に 0 を追加
             <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
             <&zip_xy_scaler 1 16>, 
             <&zip_xy_to_scroll_mapper>;
@@ -106,8 +106,8 @@
     scroll_zoom {
         layers = <4>;
         input-processors = 
-            <&zip_v_only>,   // ← これを追加（縦のみに制限）
-            <&zip_slow 1 2>, // スピード半分
+            <&zip_v_only 0>, // 末尾に 0 を追加
+            <&zip_slow 1 2>, 
             <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, 
             <&zip_xy_scaler 1 16>, 
             <&zip_xy_to_scroll_mapper>;
