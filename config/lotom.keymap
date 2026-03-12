@@ -200,7 +200,7 @@
         };
 
         th_tab: tap_hold_tab {
-            ccompatible = "zmk,behavior-hold-tap";
+            compatible = "zmk,behavior-hold-tap";
             label = "TAP_HOLD_TAB";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -211,7 +211,7 @@
         };
 
         th_enter: tap_hold_enter {
-            ccompatible = "zmk,behavior-hold-tap";
+            compatible = "zmk,behavior-hold-tap";
             label = "TAP_HOLD_ENTER";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
