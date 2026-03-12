@@ -195,7 +195,6 @@
         };
 
         SCROLL {
-            input-processors = <&zip_v_only>;
             bindings = <
 &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans     &trans  &trans
@@ -206,7 +205,6 @@
         };
 
         SIDE_SCROLL {
-            input-processors = <&zip_h_only>;
             bindings = <
 &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans
@@ -217,10 +215,6 @@
         };
 
         ZOOM {
-            // スピードを半分にし、かつ縦スクロールのみに制限
-
-            input-processors = <&zip_slow 1 2>, <&zip_v_only>;
-
             bindings = <
 &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans     &trans     &trans  &trans
