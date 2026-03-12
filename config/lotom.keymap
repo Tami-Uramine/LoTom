@@ -121,7 +121,7 @@
 
         td_tab: tap_dance_tab {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_PARENTHESIS";
+            label = "TAP_DANCE_TAB";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp TAB>, <&kp LS(TAB)>;
@@ -129,7 +129,7 @@
 
         td_enter: tap_dance_enter {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_PARENTHESIS";
+            label = "TAP_DANCE_EBTER";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp ENTER>, <&kp LS(ENTER)>;
