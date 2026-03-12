@@ -150,6 +150,14 @@
             tapping-term-ms = <200>;
             bindings = <&kp SLASH>, <&div_symbol>;
         };
+
+        td_copy_cut: tap_dance_copy_cut {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_COPY_CUT";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LS(C)>, <&kp LS(X)>;
+        };
     };
 
     macros {
