@@ -231,7 +231,7 @@
             >;
         };
 
-        TRACKBALL_4ARROW {
+        TRACKBALL_4_WAY_ARROW {
             bindings = <
 &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
