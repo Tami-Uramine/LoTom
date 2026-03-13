@@ -395,7 +395,7 @@
             >;
         };
 
-        SIDE_SCROLL {
+        ZOOM {
             bindings = <
 &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans
@@ -405,7 +405,7 @@
             >;
         };
 
-        ZOOM {
+        ARROW {
             bindings = <
 &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
