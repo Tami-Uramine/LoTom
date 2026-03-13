@@ -11,9 +11,9 @@
         21 // J
         22 // K
         23 // l
-        27 // left ctl
         36 // right ctl
-        39 // left alt
+        38 // left ctl
+        40 // left alt
         46 // right alt
     >;
 };
