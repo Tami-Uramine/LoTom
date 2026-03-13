@@ -437,10 +437,10 @@
         BY_GUI_FUNCTION {
             bindings = <
 &bt BT_SEL 0  &kp LS(LG(S))
-&bt BT_SEL 1  &trans         &trans              &kp LG(UP_ARROW)    &trans               &trans  &kp F1     &kp F2     &kp F3              &kp F4              &kp F5     &kp F11
-&bt BT_SEL 2  &trans         &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &kp F6     &kp F7     &kp F8              &kp F9              &kp F10    &kp F12
-&bt BT_SEL 3  &trans         &trans              &kp LG(D)           &trans               &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)           &kp LC(A)           &kp LC(Z)  &kp LC(Y)
-&bt BT_SEL 4  &trans         &trans              &trans              &trans               &trans  &trans     &trans     &mt LEFT_ALT LC(S)  &td_alt_left_right
+&bt BT_SEL 1  &trans         &trans              &kp LG(UP_ARROW)    &trans               &trans  &kp F1     &kp F2     &kp F3              &kp F4     &kp F5     &kp F11
+&bt BT_SEL 2  &trans         &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &kp F6     &kp F7     &kp F8              &kp F9     &kp F10    &kp F12
+&bt BT_SEL 3  &trans         &trans              &kp LG(D)           &trans               &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)           &kp LC(A)  &kp LC(Z)  &kp LC(Y)
+&bt BT_SEL 4  &trans         &trans              &trans              &trans               &trans  &trans     &trans     &mt LEFT_ALT LC(S)  &kp LC(P)
             >;
 
             sensor-bindings =
