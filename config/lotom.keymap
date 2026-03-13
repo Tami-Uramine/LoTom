@@ -222,6 +222,15 @@
 
             // 1番目が長押し(Hold)、2番目が短押し(Tap)
         };
+
+        lt_slow: layer_tap_slow {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_SLOW";
+            #binding-cells = <2>;
+            tapping-term-ms = <300>; // ここで判定時間をミリ秒単位で指定
+            flavor = "tap-preferred"; // タップを優先する設定（誤爆防止に推奨）
+            bindings = <&mo>, <&kp>;
+        };
     };
 
     macros {
