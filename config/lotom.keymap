@@ -356,20 +356,20 @@
             >;
         };
 
-        ZOOM {
+        ZOOM_TAB {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &mkp LCLK  &mkp MCLK  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp END    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp TAB       &kp W           &kp T   &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_UP  &msc SCRL_DOWN  &trans  &trans
             >;
         };
 
         ARROW {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME        &kp UP_ARROW    &kp END          &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans
