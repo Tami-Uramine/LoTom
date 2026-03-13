@@ -394,10 +394,10 @@
         NUM {
             bindings = <
 &trans  &kp EQUAL
-&trans  &trans     &trans          &kp UP_ARROW    &trans           &trans  &kp ESCAPE    &kp NUMBER_7  &kp NUMBER_8       &kp NUMBER_9                   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp TAB       &kp NUMBER_4  &kp NUMBER_5       &kp NUMBER_6                   &kp MINUS             &kp LS(EQUAL)
-&trans  &trans     &trans          &trans          &trans           &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2       &kp NUMBER_3                   &kp SLASH             &mt LEFT_SHIFT ASTERISK
-&trans  &trans     &trans          &trans          &trans           &trans  &trans        &trans        &kp LS(SEMICOLON)  &mt LEFT_GUI LS(SINGLE_QUOTE)
+&trans  &trans     &trans          &kp UP_ARROW    &trans           &trans  &kp ESCAPE    &kp NUMBER_7  &kp NUMBER_8                &kp NUMBER_9                   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp TAB       &kp NUMBER_4  &kp NUMBER_5                &kp NUMBER_6                   &kp MINUS             &kp LS(EQUAL)
+&trans  &trans     &trans          &trans          &trans           &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2                &kp NUMBER_3                   &mt LCTRL SLASH       &mt LEFT_SHIFT ASTERISK
+&trans  &trans     &trans          &trans          &trans           &trans  &trans        &trans        &mt LEFT_ALT LS(SEMICOLON)  &mt LEFT_GUI LS(SINGLE_QUOTE)
             >;
 
             sensor-bindings =
@@ -419,7 +419,7 @@
                 <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
-        BY_GUI_FUNCTION {
+        BT_GUI_FUNCTION {
             bindings = <
 &bt BT_SEL 0  &kp LS(LG(S))
 &bt BT_SEL 1  &trans         &trans              &kp LG(UP_ARROW)    &trans               &trans  &kp F1     &kp F2     &kp F3              &kp F4     &kp F5     &kp F11
