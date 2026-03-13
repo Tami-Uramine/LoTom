@@ -54,6 +54,15 @@
             bindings = <&zoom_ctrl_on>, <&kp>;
         };
 
+        lt_zoom_mouse: lt_zoom_mouse {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&zoom_ctrl_on>, <&mkp>;
+        };
+
+
         td_ime: tap_dance_ime {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_IME";
