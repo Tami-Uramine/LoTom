@@ -228,10 +228,10 @@
         default_layer {
             bindings = <
 &kp ESCAPE      &kp DELETE
-&kp LS(GRAVE)   &kp Q         &kp W         &kp E               &kp R             &kp T        &kp Y        &kp U                &kp I                   &kp O         &kp P             &kp BACKSPACE
-&kp TAB         &kp A         &kp S         &kp D               &kp F             &kp G        &kp H        &kp J                &kp K                   &kp L         &lt_slow 4 MINUS  &kp ENTER
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C               &kp V             &kp B        &kp N        &kp M                &kp COMMA               &kp DOT       &mt LCTRL SLASH   &kp LEFT_SHIFT
-&kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &lt 7 INT_MUHENKAN  &lt 6 INT_HENKAN  &lt 5 SPACE  &lt 5 SPACE  &lt_slow 7 CAPSLOCK  &mt LEFT_ALT BACKSLASH  &kp LEFT_GUI
+&kp LS(GRAVE)   &kp Q         &kp W         &kp E               &kp R             &kp T        &kp Y        &kp U           &kp I                   &kp O         &kp P             &kp BACKSPACE
+&kp TAB         &kp A         &kp S         &kp D               &kp F             &kp G        &kp H        &kp J           &lt_slow 2 K            &lt_slow 3 L  &lt_slow 4 MINUS  &kp ENTER
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C               &kp V             &kp B        &kp N        &kp M           &kp COMMA               &kp DOT       &mt LCTRL SLASH   &kp LEFT_SHIFT
+&kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &lt 7 INT_MUHENKAN  &lt 6 INT_HENKAN  &lt 5 SPACE  &lt 5 SPACE  &lt 7 CAPSLOCK  &mt LEFT_ALT BACKSLASH  &kp LEFT_GUI
             >;
 
             sensor-bindings =
@@ -281,11 +281,11 @@
 
         NUM {
             bindings = <
-&trans  &kp EQUAL
-&trans  &trans     &trans          &kp UP_ARROW    &trans           &trans  &kp ESCAPE    &kp NUMBER_7  &kp NUMBER_8                &kp NUMBER_9                   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp TAB       &kp NUMBER_4  &kp NUMBER_5                &kp NUMBER_6                   &kp MINUS             &kp LS(EQUAL)
-&trans  &trans     &trans          &trans          &trans           &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2                &kp NUMBER_3                   &mt LCTRL SLASH       &mt LEFT_SHIFT ASTERISK
-&trans  &trans     &trans          &trans          &trans           &trans  &trans        &trans        &mt LEFT_ALT LS(SEMICOLON)  &mt LEFT_GUI LS(SINGLE_QUOTE)
+&trans    &kp EQUAL
+&trans    &trans     &trans          &kp UP_ARROW    &trans           &trans  &kp ESCAPE    &kp NUMBER_7  &kp NUMBER_8                &kp NUMBER_9                   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&alt_tab  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &kp TAB       &kp NUMBER_4  &kp NUMBER_5                &kp NUMBER_6                   &kp MINUS             &kp LS(EQUAL)
+&trans    &trans     &trans          &trans          &trans           &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2                &kp NUMBER_3                   &mt LCTRL SLASH       &mt LEFT_SHIFT ASTERISK
+&trans    &trans     &trans          &trans          &trans           &trans  &trans        &trans        &mt LEFT_ALT LS(SEMICOLON)  &mt LEFT_GUI LS(SINGLE_QUOTE)
             >;
 
             sensor-bindings =
