@@ -62,7 +62,6 @@
             bindings = <&zoom_ctrl_on>, <&mkp>;
         };
 
-
         td_ime: tap_dance_ime {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_IME";
@@ -386,11 +385,11 @@
 
         MOUSE {
             bindings = <
-&trans     &trans
-&trans     &trans        &trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans            &trans         &trans
-&trans     &trans        &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &lt_mouse 2 MCLK  &lt_mouse 3 RCLK  &zoom_ctrl_on  &trans
-&kp LCTRL  &trans        &trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans            &trans         &kp LCTRL
-&trans     &kp LEFT_ALT  &trans  &trans  &trans  &trans  &trans  &trans     &kp LEFT_ALT      &trans
+&trans  &trans
+&trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans                 &trans     &trans
+&trans  &trans        &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &lt_mouse 2 MCLK  &lt_zoom_mouse 0 RCLK  &trans     &trans
+&trans  &kp LCTRL     &trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans                 &kp LCTRL  &trans
+&trans  &kp LEFT_ALT  &trans  &trans  &trans  &trans  &trans  &trans     &kp LEFT_ALT      &trans
             >;
         };
 
