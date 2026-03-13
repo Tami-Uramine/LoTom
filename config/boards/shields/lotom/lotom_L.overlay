@@ -108,6 +108,8 @@
         input-processors = <
             &zip_xy_to_scroll_mapper
             &zip_scroll_x_scaler 0 1
+            &zip_scroll_y_scaler 1 3
+            &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
             &zip_scroll_snap
             >;
     };
@@ -117,18 +119,20 @@
         layers = <3>;
         input-processors = <
             &zip_xy_to_scroll_mapper
+            &zip_scroll_x_scaler 1 3
             &zip_scroll_y_scaler 0 1
             &zip_scroll_snap
             >;
     };
 
-    // レイヤー 4 (ZOOM) : 縦のみ ＋ スピード半分
+    // レイヤー 4 (ZOOM) : 縦のみ
     scroll_zoom {
         layers = <4>;
         input-processors = <
             &zip_xy_to_scroll_mapper
-            &zip_scroll_y_scaler 1 2
+            &zip_scroll_y_scaler 1 5
             &zip_scroll_x_scaler 0 1
+            &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
             &zip_scroll_snap
             >;
     };
