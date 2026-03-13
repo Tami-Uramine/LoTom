@@ -420,13 +420,13 @@
                 <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
-        SHIFT {
+        SHIFT_SYMBOL {
             bindings = <
-&trans  &trans
-&trans  &trans  &trans              &kp LS(UP_ARROW)    &trans               &trans  &trans  &kp LS(NUMBER_7)  &kp SEMICOLON     &kp SINGLE_QUOTE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&trans  &trans  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans  &trans  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)
-&trans  &trans  &trans              &trans              &trans               &trans  &trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans                &trans
-&trans  &trans  &trans              &trans              &trans               &trans  &trans  &trans            &trans            &trans
+&trans  &kp GRAVE
+&trans  &trans     &trans              &kp LS(UP_ARROW)    &trans               &trans  &trans  &kp LS(NUMBER_7)  &kp SEMICOLON     &kp SINGLE_QUOTE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&trans  &trans     &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans  &trans  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)
+&trans  &trans     &trans              &trans              &trans               &trans  &trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &div_symbol           &mul_symbol
+&trans  &trans     &trans              &trans              &trans               &trans  &trans  &trans            &trans            &trans
             >;
 
             sensor-bindings =
@@ -434,7 +434,7 @@
                 <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
-        FUNCTION {
+        BY_GUI_FUNCTION {
             bindings = <
 &bt BT_SEL 0  &kp LA(F4)
 &bt BT_SEL 1  &trans      &trans              &kp LG(UP_ARROW)    &trans               &trans  &kp F1         &kp F2        &kp F3           &kp F4              &kp F5     &kp F11
