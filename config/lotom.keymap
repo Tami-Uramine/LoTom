@@ -62,70 +62,22 @@
             bindings = <&zoom_ctrl_on>, <&mkp>;
         };
 
-        td_ime: tap_dance_ime {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_IME";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp INT_HENKAN>, <&kp INT_MUHENKAN>;
-        };
-
-        th_ime: tap_hold_ime {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_IME";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&td_ime>;
-        };
-
-        td_home_end: tap_dance_home_end {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_HOME_END";
-            #binding-cells = <0>;
-            tapping-term-ms = <150>;
-            bindings = <&kp HOME>, <&kp END>;
-        };
-
-        th_home_end: tap_hold_home_end {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP_HOME_END";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&td_home_end>;
-        };
-
-        zip_slow: zip_slow {
-            compatible = "zmk,input-processor-scaler";
-            #input-processor-cells = <2>;
-            type = <1>; // 直接数値を指定
-            // ↓ この行を追加：X軸、Y軸、ホイール、横ホイールすべてを対象にする
-
-            codes = <0x00 0x01 0x08 0x06>;
-        };
-
-        zip_v_only: zip_v_only {
-            compatible = "zmk,input-processor-intercept";
-            #input-processor-cells = <1>; // 0 から 1 に変更
-            x-modifier = <0>;
-        };
-
-        zip_h_only: zip_h_only {
-            compatible = "zmk,input-processor-intercept";
-            #input-processor-cells = <1>; // 0 から 1 に変更
-            y-modifier = <0>;
-        };
-
         lt_slow: layer_tap_slow {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_SLOW";
             #binding-cells = <2>;
-            tapping-term-ms = <800>; // ここで判定時間をミリ秒単位で指定
+            tapping-term-ms = <600>; // ここで判定時間をミリ秒単位で指定
             flavor = "tap-preferred"; // タップを優先する設定（誤爆防止に推奨）
             bindings = <&mo>, <&kp>;
+        };
+
+        mt_slow: mod_tap_slow {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP_SLOW";
+            #binding-cells = <2>;
+            tapping-term-ms = <600>;     // 判定時間（長めに設定）
+            flavor = "tap-preferred";    // 迷った時はタップを優先（誤爆防止）
+            bindings = <&kp>, <&kp>;     // Hold側もTap側もキー入力（kp）を使用
         };
     };
 
