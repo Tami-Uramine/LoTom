@@ -73,7 +73,7 @@
 
         lt_middle: layer_tap_middle {
             compatible = "zmk,behavior-hold-tap";
-                    label = "LAYER_TAP_MIDDLE";
+            label = "LAYER_TAP_MIDDLE";
             #binding-cells = <2>;
             tapping-term-ms = <400>; // ここで判定時間をミリ秒単位で指定
             flavor = "tap-preferred"; // タップを優先する設定（誤爆防止に推奨）
@@ -87,7 +87,8 @@
             tapping-term-ms = <600>;     // 判定時間（長めに設定）
             flavor = "tap-preferred";    // 迷った時はタップを優先（誤爆防止）
             bindings = <&kp>, <&kp>;
-     // Hold側もTap側もキー入力（kp）を使用
+
+            // Hold側もTap側もキー入力（kp）を使用
         };
 
         mt_middle: mod_tap_middle {
@@ -97,7 +98,8 @@
             tapping-term-ms = <400>;     // 判定時間（長めに設定）
             flavor = "tap-preferred";    // 迷った時はタップを優先（誤爆防止）
             bindings = <&kp>, <&kp>;
-     // Hold側もTap側もキー入力（kp）を使用
+
+            // Hold側もTap側もキー入力（kp）を使用
         };
     };
 
@@ -200,9 +202,9 @@
         default_layer {
             bindings = <
 &kp ESCAPE      &kp DELETE
-&kp LS(GRAVE)   &kp Q         &kp W         &kp E               &kp R             &kp T        &kp Y        &kp U           &kp I                   &kp O         &kp P             &kp BACKSPACE
-&kp TAB         &kp A         &kp S         &kp D               &kp F             &kp G        &kp H        &kp J           &lt_slow 2 K            &lt_slow 3 L  &lt_slow 4 MINUS  &kp ENTER
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C               &kp V             &kp B        &kp N        &kp M           &kp COMMA               &kp DOT       &mt LCTRL SLASH   &kp LEFT_SHIFT
+&kp LS(GRAVE)   &kp Q         &kp W         &kp E               &kp R             &kp T        &kp Y        &kp U           &kp I                   &kp O         &kp P               &kp BACKSPACE
+&kp TAB         &kp A         &kp S         &kp D               &kp F             &kp G        &kp H        &kp J           &lt_slow 2 K            &lt_slow 3 L  &lt_middle 4 MINUS  &kp ENTER
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C               &kp V             &kp B        &kp N        &kp M           &kp COMMA               &kp DOT       &mt LCTRL SLASH     &kp LEFT_SHIFT
 &kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT  &lt 7 INT_MUHENKAN  &lt 6 INT_HENKAN  &lt 5 SPACE  &lt 5 SPACE  &lt 7 CAPSLOCK  &mt LEFT_ALT BACKSLASH  &kp LEFT_GUI
             >;
 
