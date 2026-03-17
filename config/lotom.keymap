@@ -71,11 +71,30 @@
             bindings = <&mo>, <&kp>;
         };
 
+        lt_middle: layer_tap_middle {
+            compatible = "zmk,behavior-hold-tap";
+                    label = "LAYER_TAP_MIDDLE";
+            #binding-cells = <2>;
+            tapping-term-ms = <400>; // ここで判定時間をミリ秒単位で指定
+            flavor = "tap-preferred"; // タップを優先する設定（誤爆防止に推奨）
+            bindings = <&mo>, <&kp>;
+        };
+
         mt_slow: mod_tap_slow {
             compatible = "zmk,behavior-hold-tap";
             label = "MOD_TAP_SLOW";
             #binding-cells = <2>;
             tapping-term-ms = <600>;     // 判定時間（長めに設定）
+            flavor = "tap-preferred";    // 迷った時はタップを優先（誤爆防止）
+            bindings = <&kp>, <&kp>;
+     // Hold側もTap側もキー入力（kp）を使用
+        };
+
+        mt_middle: mod_tap_middle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP_MIDDLE";
+            #binding-cells = <2>;
+            tapping-term-ms = <400>;     // 判定時間（長めに設定）
             flavor = "tap-preferred";    // 迷った時はタップを優先（誤爆防止）
             bindings = <&kp>, <&kp>;
      // Hold側もTap側もキー入力（kp）を使用
