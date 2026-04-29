@@ -2,14 +2,10 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: mctechnology17
-      url-base: https://github.com/mctechnology17
     - name: badjeff
       url-base: https://github.com/badjeff
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
-    - name: te9no
-      url-base: https://github.com/te9no
+    - name: pukuhei
+      url-base: https://github.com/pukuhei
     - name: kot149
       url-base: https://github.com/kot149
     - name: zettaface
