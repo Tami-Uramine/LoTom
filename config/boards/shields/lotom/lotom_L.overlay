@@ -99,30 +99,30 @@
 &trackball_listener {
     status = "okay";
     // 全レイヤー共通の基本設定（必要あれば）
-    input-processors = <&zip_temp_layer 1 1000000>;
+    input-processors = <&zip_temp_layer 1 1000000>, <&mouse_runtime_input_processor>;
 
     // レイヤー 2 (SCROLL) : スクロール
-    scroll_v {
+    scroll {
         layers = <2>;
-        input-processors = <
-            &zip_xy_to_scroll_mapper
-            &zip_scroll_scaler 1 10
-            &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
-            &zip_scroll_snap
-            >;
+        input-processors = 
+            <&scroll_runtime_input_processor>, 
+            <&zip_xy_to_scroll_mapper>, 
+            <&zip_scroll_scaler 1 10>, 
+            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>, 
+            <&zip_scroll_snap>;
     };
 
 
     // レイヤー 3 (ZOOM) : 縦のみ
     scroll_zoom {
         layers = <3>;
-        input-processors = <
-            &zip_xy_to_scroll_mapper
-            &zip_scroll_y_scaler 1 10
-            &zip_scroll_x_scaler 0 1
-            &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
-            &zip_scroll_snap
-            >;
+        input-processors = 
+            <&scroll_runtime_input_processor>, 
+            <&zip_xy_to_scroll_mapper>, 
+            <&zip_scroll_y_scaler 1 10>, 
+            <&zip_scroll_x_scaler 0 1>, 
+            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>, 
+            <&zip_scroll_snap>;
     };
 
 };
