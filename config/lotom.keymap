@@ -1,11 +1,11 @@
 #include <input/processors.dtsi>
 #include <scroll-snap.dtsi>
+#include <input/processors/runtime-input-processor.dtsi>
+#include <behaviors/runtime-sensor-rotate.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <input/processors/runtime-input-processor.dtsi>
-#include <behaviors/runtime-sensor-rotate.dtsi>
 
 // 警告を避けるため重複定義を削除、または上書き
 // #define ZMK_POINTING_DEFAULT_SCRL_VAL 80 
@@ -289,12 +289,22 @@
 &bt BT_SEL 1  &trans         &trans              &kp LG(UP_ARROW)    &trans               &trans  &kp F1     &kp F2     &kp F3                   &kp F4     &kp F5     &kp F11
 &bt BT_SEL 2  &trans         &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &kp F6     &kp F7     &kp F8                   &kp F9     &kp F10    &kp F12
 &bt BT_SEL 3  &trans         &trans              &kp LG(D)           &trans               &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)                &kp LC(A)  &kp LC(Z)  &kp LC(Y)
-&bt BT_SEL 4  &trans         &studio_unlock              &trans              &trans               &trans  &trans     &trans     &mt_slow LEFT_ALT LC(S)  &kp LC(P)
+&bt BT_SEL 4  &trans         &studio_unlock      &trans              &trans               &trans  &trans     &trans     &mt_slow LEFT_ALT LC(S)  &kp LC(P)
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
+
+        layer_8 {
+            bindings = <
+&kp ESC    &kp ESC
+&kp Q      &kp W     &kp E     &kp R         &kp T                      &kp TAB                    &kp TAB                 &kp Y                      &kp U     &kp I      &kp O    &kp P
+&kp A      &kp S     &kp D     &kp F         &kp G                      &kp ENTER                  &kp ENTER               &kp H                      &kp J     &kp K      &kp L    &kp MINUS
+&kp Z      &kp X     &kp C     &kp V         &kp B                      &kp SPACE                  &kp SPACE               &kp N                      &kp M     &kp COMMA  &kp DOT  &kp FSLH
+&kp GRAVE  &kp SEMI  &kp APOS  &kp LEFT_GUI  &mt LEFT_SHIFT INT_HENKAN  &mt LEFT_ALT INT_MUHENKAN  &mt LCTRL INT_MUHENKAN  &mt LEFT_SHIFT INT_HENKAN  &kp BSPC  &kp DEL
+            >;
         };
     };
 };
