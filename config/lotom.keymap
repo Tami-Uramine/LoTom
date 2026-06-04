@@ -316,5 +316,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans  &trans
             >;
         };
+
+        layer_10 {
+            bindings = <
+&trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME            &kp UP_ARROW    &kp END              &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_ARROW)  &kp LG(D)       &kp LG(RIGHT_ARROW)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans
+            >;
+        };
     };
 };
