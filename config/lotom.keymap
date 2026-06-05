@@ -310,10 +310,10 @@
         layer_9 {
             bindings = <
 &trans  &kp K_CALCULATOR
-&trans  &trans            &trans  &trans  &trans  &trans  &trans           &kp LS(EQUAL)      &kp N7  &kp N8  &kp N9  &kp N0
-&trans  &trans            &trans  &trans  &trans  &trans  &trans           &kp MINUS          &kp N4  &kp N5  &kp N6  &kp LS(SEMI)
-&trans  &trans            &trans  &trans  &trans  &trans  &trans           &kp FSLH           &kp N1  &kp N2  &kp N3  &trans
-&trans  &trans            &trans  &trans  &trans  &trans  &mt LCTRL EQUAL  &mt LSHIFT LS(N8)  &trans  &trans
+&trans  &trans            &trans  &trans  &trans  &trans  &trans            &kp EQUAL         &kp N7  &kp N8  &kp N9  &kp N0
+&trans  &trans            &trans  &trans  &trans  &trans  &trans            &kp LS(EQUAL)     &kp N4  &kp N5  &kp N6  &kp LS(SEMI)
+&trans  &trans            &trans  &trans  &trans  &trans  &trans            &kp MINUS         &kp N1  &kp N2  &kp N3  &trans
+&trans  &trans            &trans  &trans  &trans  &trans  &mt LCTRL LS(N8)  &mt LSHIFT SLASH  &trans  &trans
             >;
         };
 
