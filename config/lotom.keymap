@@ -340,10 +340,10 @@
         layer_12 {
             bindings = <
 &trans  &kp LS(LG(S))
-&trans  &trans         &trans  &trans  &trans  &trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &trans
-&trans  &trans         &trans  &trans  &trans  &trans  &trans  &kp LC(Y)  &kp LC(Z)  &kp LC(S)  &kp LC(P)  &trans
-&trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans     &trans
-&trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
+&trans  &trans         &trans  &trans  &trans  &trans  &kp LG(V)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &trans
+&trans  &trans         &trans  &trans  &trans  &trans  &trans     &kp LC(Y)  &kp LC(Z)  &kp LC(S)  &kp LC(P)  &trans
+&trans  &trans         &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans     &trans     &trans
+&trans  &trans         &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
             >;
         };
     };
