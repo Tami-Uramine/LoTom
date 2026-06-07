@@ -247,10 +247,10 @@
         ARROW {
             bindings = <
 &trans  &kp LA(F4)
-&trans  &trans      &trans  &trans  &trans  &trans  &trans               &kp LC(T)              &kp HOME            &kp UP_ARROW    &kp END              &trans
-&trans  &trans      &trans  &trans  &trans  &trans  &trans               &kp LC(W)              &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans
-&trans  &trans      &trans  &trans  &trans  &trans  &trans               &kp LG(TAB)            &kp LG(LEFT_ARROW)  &kp LG(D)       &kp LG(RIGHT_ARROW)  &trans
-&trans  &trans      &trans  &trans  &trans  &trans  &kp LC(K_SCROLL_UP)  &kp LC(K_SCROLL_DOWN)  &trans              &trans
+&trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp LC(T)    &kp HOME            &kp UP_ARROW    &kp END              &trans
+&trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp LC(W)    &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans
+&trans  &trans      &trans  &trans  &trans  &trans  &trans  &kp LG(TAB)  &kp LG(LEFT_ARROW)  &kp LG(D)       &kp LG(RIGHT_ARROW)  &trans
+&trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans       &trans              &trans
             >;
         };
 
