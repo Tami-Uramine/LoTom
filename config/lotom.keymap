@@ -213,10 +213,10 @@
         default_layer {
             bindings = <
 &kp ESC        &kp ESC
-&kp Q          &kp W           &kp E          &kp R         &kp T                            &kp GRAVE                       &kp TAB                 &kp Y                      &kp U     &kp I             &kp O    &lt_middle 10 P
-&kp A          &kp S           &kp D          &kp F         &kp G                            &kp LEFT_BRACKET                &kp ENTER               &kp H                      &kp J     &lt_middle 2 K    &kp L    &lt_middle 3 MINUS
-&kp Z          &kp X           &kp C          &kp V         &kp B                            &kp RIGHT_BRACKET               &kp SPACE               &kp N                      &kp M     &kp COMMA         &kp DOT  &lt_middle 4 SLASH
-&kp SEMICOLON  &kp APOSTROPHE  &kp BACKSLASH  &kp LEFT_GUI  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LEFT_ALT RIGHT_PARENTHESIS  &mt LCTRL INT_MUHENKAN  &mt LEFT_SHIFT INT_HENKAN  &kp BSPC  &lt_middle 9 DEL
+&kp Q          &kp W           &kp E          &kp R         &kp T                            &kp GRAVE                       &kp TAB                 &kp Y                      &kp U     &kp I              &kp O    &lt_middle 5 P
+&kp A          &kp S           &kp D          &kp F         &kp G                            &kp LEFT_BRACKET                &kp ENTER               &kp H                      &kp J     &lt_middle 2 K     &kp L    &lt_middle 3 MINUS
+&kp Z          &kp X           &kp C          &kp V         &kp B                            &kp RIGHT_BRACKET               &kp SPACE               &kp N                      &kp M     &kp COMMA          &kp DOT  &lt_middle 4 SLASH
+&kp SEMICOLON  &kp APOSTROPHE  &kp BACKSLASH  &kp LEFT_GUI  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LEFT_ALT RIGHT_PARENTHESIS  &mt LCTRL INT_MUHENKAN  &mt LEFT_SHIFT INT_HENKAN  &kp BSPC  &lt_middle 10 DEL
             >;
 
             sensor-bindings =
@@ -268,6 +268,16 @@
                 <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
+        COMMAND {
+            bindings = <
+&trans  &kp LS(LG(S))
+&trans  &trans         &trans  &trans  &trans  &trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &trans
+&trans  &trans         &trans  &trans  &trans  &trans  &trans  &kp LC(Y)  &kp LC(Z)  &kp LC(S)  &kp LC(P)  &trans
+&trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans     &trans
+&trans  &trans         &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans
+            >;
+        };
+
         BT_GUI_FUNCTION {
             bindings = <
 &bt BT_SEL 0  &kp LS(LG(S))
@@ -285,10 +295,10 @@
         layer_8 {
             bindings = <
 &kp ESC        &kp ESC
-&kp Q          &kp W           &kp E          &kp R         &kp T                            &kp GRAVE                       &kp TAB                 &kp Y                      &kp U     &kp I             &kp O    &lt_middle 10 P
-&kp A          &kp S           &kp D          &kp F         &kp G                            &kp LEFT_BRACKET                &kp ENTER               &kp H                      &kp J     &kp K             &kp L    &lt_middle 8 MINUS
-&kp Z          &kp X           &kp C          &kp V         &kp B                            &kp RIGHT_BRACKET               &kp SPACE               &kp N                      &kp M     &kp COMMA         &kp DOT  &lt_middle 7 SLASH
-&kp SEMICOLON  &kp APOSTROPHE  &kp BACKSLASH  &kp LEFT_GUI  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LEFT_ALT RIGHT_PARENTHESIS  &mt LCTRL INT_MUHENKAN  &mt LEFT_SHIFT INT_HENKAN  &kp BSPC  &lt_middle 9 DEL
+&kp Q          &kp W           &kp E          &kp R         &kp T                            &kp GRAVE                       &kp TAB                 &kp Y                      &kp U     &kp I              &kp O    &lt_middle 5 P
+&kp A          &kp S           &kp D          &kp F         &kp G                            &kp LEFT_BRACKET                &kp ENTER               &kp H                      &kp J     &kp K              &kp L    &lt_middle 9 MINUS
+&kp Z          &kp X           &kp C          &kp V         &kp B                            &kp RIGHT_BRACKET               &kp SPACE               &kp N                      &kp M     &kp COMMA          &kp DOT  &lt_middle 8 SLASH
+&kp SEMICOLON  &kp APOSTROPHE  &kp BACKSLASH  &kp LEFT_GUI  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LEFT_ALT RIGHT_PARENTHESIS  &mt LCTRL INT_MUHENKAN  &mt LEFT_SHIFT INT_HENKAN  &kp BSPC  &lt_middle 10 DEL
             >;
         };
 
@@ -319,16 +329,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
-            >;
-        };
-
-        layer_12 {
-            bindings = <
-&trans  &kp LS(LG(S))
-&trans  &trans         &trans  &trans  &trans  &trans  &kp LG(V)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &trans
-&trans  &trans         &trans  &trans  &trans  &trans  &kp LG(L)  &kp LC(Y)  &kp LC(Z)  &kp LC(S)  &kp LC(P)  &trans
-&trans  &trans         &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans     &trans     &trans
-&trans  &trans         &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
             >;
         };
     };
