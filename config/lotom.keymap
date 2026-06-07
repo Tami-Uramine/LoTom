@@ -48,6 +48,15 @@
             bindings = <&mo>, <&mkp>;
         };
 
+        mt_mouse: mod_tap_mouse {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP_MOUSE";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&mkp>;
+        };
+
         lt_zoom: lt_zoom {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
