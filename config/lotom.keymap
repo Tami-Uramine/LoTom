@@ -151,12 +151,12 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 3>,
+                <&mo 0>,
                 <&macro_press>,
                 <&kp LCTRL>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 3>,
+                <&mo 0>,
                 <&macro_release>,
                 <&kp LCTRL>;
         };
@@ -213,10 +213,10 @@
         default_layer {
             bindings = <
 &kp ESC        &kp ESC
-&kp Q          &kp W           &kp E          &kp R         &kp T                            &kp GRAVE                       &kp TAB                 &kp Y                      &kp U     &kp I              &kp O    &lt_middle 12 P
-&kp A          &kp S           &kp D          &kp F         &kp G                            &kp LEFT_BRACKET                &kp ENTER               &kp H                      &kp J     &kp K              &kp L    &lt_middle 10 MINUS
-&kp Z          &kp X           &kp C          &kp V         &kp B                            &kp RIGHT_BRACKET               &kp SPACE               &kp N                      &kp M     &kp COMMA          &kp DOT  &lt_middle 9 SLASH
-&kp SEMICOLON  &kp APOSTROPHE  &kp BACKSLASH  &kp LEFT_GUI  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LEFT_ALT RIGHT_PARENTHESIS  &mt LCTRL INT_MUHENKAN  &mt LEFT_SHIFT INT_HENKAN  &kp BSPC  &lt_middle 11 DEL
+&kp Q          &kp W           &kp E          &kp R         &kp T                            &kp GRAVE                       &kp TAB                 &kp Y                      &kp U     &kp I              &kp O    &lt_middle 11 P
+&kp A          &kp S           &kp D          &kp F         &kp G                            &kp LEFT_BRACKET                &kp ENTER               &kp H                      &kp J     &kp K              &kp L    &lt_middle 9 MINUS
+&kp Z          &kp X           &kp C          &kp V         &kp B                            &kp RIGHT_BRACKET               &kp SPACE               &kp N                      &kp M     &kp COMMA          &kp DOT  &lt_middle 8 SLASH
+&kp SEMICOLON  &kp APOSTROPHE  &kp BACKSLASH  &kp LEFT_GUI  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LEFT_ALT RIGHT_PARENTHESIS  &mt LCTRL INT_MUHENKAN  &mt LEFT_SHIFT INT_HENKAN  &kp BSPC  &lt_middle 10 DEL
             >;
 
             sensor-bindings =
@@ -241,16 +241,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &mkp LCLK  &trans  &mkp RCLK  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans     &trans  &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP  &kp PAGE_DOWN  &trans     &trans
-            >;
-        };
-
-        ZOOM_TAB {
-            bindings = <
-&trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp ESCAPE    &trans          &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp TAB       &kp W           &kp T   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans          &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &msc SCRL_UP  &msc SCRL_DOWN  &trans  &trans
             >;
         };
 
@@ -309,10 +299,10 @@
         layer_8 {
             bindings = <
 &kp ESC        &kp ESC
-&kp Q          &kp W           &kp E          &kp R         &kp T                            &kp GRAVE                       &kp TAB                 &kp Y                      &kp U     &kp I              &kp O    &lt_middle 12 P
-&kp A          &kp S           &kp D          &kp F         &kp G                            &kp LEFT_BRACKET                &kp ENTER               &kp H                      &kp J     &kp K              &kp L    &lt_middle 10 MINUS
-&kp Z          &kp X           &kp C          &kp V         &kp B                            &kp RIGHT_BRACKET               &kp SPACE               &kp N                      &kp M     &kp COMMA          &kp DOT  &lt_middle 9 SLASH
-&kp SEMICOLON  &kp APOSTROPHE  &kp BACKSLASH  &kp LEFT_GUI  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LEFT_ALT RIGHT_PARENTHESIS  &mt LCTRL INT_MUHENKAN  &mt LEFT_SHIFT INT_HENKAN  &kp BSPC  &lt_middle 11 DEL
+&kp Q          &kp W           &kp E          &kp R         &kp T                            &kp GRAVE                       &kp TAB                 &kp Y                      &kp U     &kp I              &kp O    &lt_middle 11 P
+&kp A          &kp S           &kp D          &kp F         &kp G                            &kp LEFT_BRACKET                &kp ENTER               &kp H                      &kp J     &kp K              &kp L    &lt_middle 9 MINUS
+&kp Z          &kp X           &kp C          &kp V         &kp B                            &kp RIGHT_BRACKET               &kp SPACE               &kp N                      &kp M     &kp COMMA          &kp DOT  &lt_middle 8 SLASH
+&kp SEMICOLON  &kp APOSTROPHE  &kp BACKSLASH  &kp LEFT_GUI  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LEFT_ALT RIGHT_PARENTHESIS  &mt LCTRL INT_MUHENKAN  &mt LEFT_SHIFT INT_HENKAN  &kp BSPC  &lt_middle 10 DEL
             >;
         };
 
