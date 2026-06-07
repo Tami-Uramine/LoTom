@@ -15,7 +15,6 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
             tap-ms = <20>;
         };
 
@@ -24,7 +23,6 @@
             label = "ENCODER_TAB_SLIDE";
             #sensor-binding-cells = <0>;
             bindings = <&kp LA(LG(RIGHT_ARROW))>, <&kp LA(LG(LEFT_ARROW))>;
-
             tap-ms = <20>;
         };
 
