@@ -15,6 +15,7 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
 
@@ -23,6 +24,7 @@
             label = "ENCODER_TAB_SLIDE";
             #sensor-binding-cells = <0>;
             bindings = <&kp LA(LG(RIGHT_ARROW))>, <&kp LA(LG(LEFT_ARROW))>;
+
             tap-ms = <20>;
         };
 
@@ -263,20 +265,20 @@
         COMMAND {
             bindings = <
 &trans  &kp LS(LG(S))
-&trans  &trans         &trans  &trans  &trans  &trans  &trans           &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &trans
-&trans  &trans         &trans  &trans  &trans  &trans  &trans           &kp LC(Y)  &kp LC(Z)  &kp LC(S)  &kp LC(P)  &trans
-&trans  &trans         &trans  &trans  &trans  &trans  &trans           &trans     &trans     &trans     &trans     &trans
-&trans  &trans         &trans  &trans  &trans  &trans  &kp LA(LC(DEL))  &kp LG(V)  &trans     &trans
+&trans  &trans         &trans  &trans  &trans  &trans  &trans        &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(A)  &trans
+&trans  &trans         &trans  &trans  &trans  &trans  &trans        &kp LC(Y)  &kp LC(Z)  &kp LC(S)  &kp LC(P)  &trans
+&trans  &trans         &trans  &trans  &trans  &trans  &trans        &trans     &trans     &trans     &trans     &trans
+&trans  &trans         &trans  &trans  &trans  &trans  &kp LEFT_GUI  &kp LG(V)  &trans     &trans
             >;
         };
 
         FUNCTION {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp F1           &kp F2   &kp F3   &kp F4   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp F5           &kp F6   &kp F7   &kp F8   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp F9           &kp F10  &kp F11  &kp F12  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(L)  &kp LA(LC(DEL))  &trans   &trans
             >;
         };
 
