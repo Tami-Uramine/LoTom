@@ -3,7 +3,6 @@
 #include <input/processors/runtime-input-processor.dtsi>
 #include <behaviors/runtime-sensor-rotate.dtsi>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -213,10 +212,10 @@
         default_layer {
             bindings = <
 &kp ESC        &kp ESC
-&kp Q          &kp W           &kp E          &kp R         &kp T                            &kp GRAVE                       &kp TAB                 &kp Y                      &kp U     &kp I              &kp O    &lt_middle 5 P
-&kp A          &kp S           &kp D          &kp F         &kp G                            &kp LEFT_BRACKET                &kp ENTER               &kp H                      &kp J     &lt_middle 2 K     &kp L    &lt_middle 3 MINUS
-&kp Z          &kp X           &kp C          &kp V         &kp B                            &kp RIGHT_BRACKET               &kp SPACE               &kp N                      &kp M     &kp COMMA          &kp DOT  &lt_middle 4 SLASH
-&kp SEMICOLON  &kp APOSTROPHE  &kp BACKSLASH  &kp LEFT_GUI  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LEFT_ALT RIGHT_PARENTHESIS  &mt LCTRL INT_MUHENKAN  &mt LEFT_SHIFT INT_HENKAN  &kp BSPC  &lt_middle 10 DEL
+&kp Q          &kp W           &kp E          &kp R         &kp T                            &kp GRAVE                       &kp TAB                 &kp Y                      &kp U     &kp I             &kp O    &lt_middle 5 P
+&kp A          &kp S           &kp D          &kp F         &kp G                            &kp LEFT_BRACKET                &kp ENTER               &kp H                      &kp J     &lt_middle 2 K    &kp L    &lt_middle 3 MINUS
+&kp Z          &kp X           &kp C          &kp V         &kp B                            &kp RIGHT_BRACKET               &kp SPACE               &kp N                      &kp M     &kp COMMA         &kp DOT  &lt_middle 4 SLASH
+&kp SEMICOLON  &kp APOSTROPHE  &kp BACKSLASH  &kp LEFT_GUI  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LEFT_ALT RIGHT_PARENTHESIS  &mt LCTRL INT_MUHENKAN  &mt LEFT_SHIFT INT_HENKAN  &kp BSPC  &lt_middle 6 DEL
             >;
 
             sensor-bindings =
@@ -262,10 +261,6 @@
 &trans  &trans            &trans  &trans  &trans  &trans  &trans            &kp MINUS         &kp N1  &kp N2  &kp N3  &trans
 &trans  &trans            &trans  &trans  &trans  &trans  &mt LCTRL LS(N8)  &mt LSHIFT SLASH  &trans  &trans
             >;
-
-            sensor-bindings =
-                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
-                <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         COMMAND {
@@ -278,51 +273,7 @@
             >;
         };
 
-        BT {
-            bindings = <
-&bt BT_SEL 0  &kp LS(LG(S))
-&bt BT_SEL 1  &trans         &trans  &trans  &trans  &trans  &kp F1     &kp F2     &kp F3                   &kp F4     &kp F5     &kp F11
-&bt BT_SEL 2  &trans         &trans  &trans  &trans  &trans  &kp F6     &kp F7     &kp F8                   &kp F9     &kp F10    &kp F12
-&bt BT_SEL 3  &trans         &trans  &trans  &trans  &trans  &kp LC(X)  &kp LC(C)  &kp LC(V)                &kp LC(A)  &kp LC(Z)  &kp LC(Y)
-&bt BT_SEL 4  &trans         &trans  &trans  &trans  &trans  &trans     &trans     &mt_slow LEFT_ALT LC(S)  &kp LC(P)
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-        };
-
-        layer_8 {
-            bindings = <
-&kp ESC        &kp ESC
-&kp Q          &kp W           &kp E          &kp R         &kp T                            &kp GRAVE                       &kp TAB                 &kp Y                      &kp U     &kp I              &kp O    &lt_middle 5 P
-&kp A          &kp S           &kp D          &kp F         &kp G                            &kp LEFT_BRACKET                &kp ENTER               &kp H                      &kp J     &kp K              &kp L    &lt_middle 9 MINUS
-&kp Z          &kp X           &kp C          &kp V         &kp B                            &kp RIGHT_BRACKET               &kp SPACE               &kp N                      &kp M     &kp COMMA          &kp DOT  &lt_middle 8 SLASH
-&kp SEMICOLON  &kp APOSTROPHE  &kp BACKSLASH  &kp LEFT_GUI  &mt LEFT_SHIFT LEFT_PARENTHESIS  &mt LEFT_ALT RIGHT_PARENTHESIS  &mt LCTRL INT_MUHENKAN  &mt LEFT_SHIFT INT_HENKAN  &kp BSPC  &lt_middle 10 DEL
-            >;
-        };
-
-        layer_9 {
-            bindings = <
-&trans  &kp K_CALCULATOR
-&trans  &trans            &trans  &trans  &trans  &trans  &trans            &kp EQUAL         &kp N7  &kp N8  &kp N9  &kp N0
-&trans  &trans            &trans  &trans  &trans  &trans  &trans            &kp LS(EQUAL)     &kp N4  &kp N5  &kp N6  &kp LS(SEMI)
-&trans  &trans            &trans  &trans  &trans  &trans  &trans            &kp MINUS         &kp N1  &kp N2  &kp N3  &trans
-&trans  &trans            &trans  &trans  &trans  &trans  &mt LCTRL LS(N8)  &mt LSHIFT SLASH  &trans  &trans
-            >;
-        };
-
-        layer_10 {
-            bindings = <
-&trans  &kp LA(F4)
-&trans  &trans      &trans  &trans  &trans  &trans  &trans               &kp LC(T)              &kp HOME            &kp UP_ARROW    &kp END              &trans
-&trans  &trans      &trans  &trans  &trans  &trans  &trans               &kp LC(W)              &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &trans
-&trans  &trans      &trans  &trans  &trans  &trans  &trans               &kp LG(TAB)            &kp LG(LEFT_ARROW)  &kp LG(D)       &kp LG(RIGHT_ARROW)  &trans
-&trans  &trans      &trans  &trans  &trans  &trans  &kp LC(K_SCROLL_UP)  &kp LC(K_SCROLL_DOWN)  &trans              &trans
-            >;
-        };
-
-        layer_11 {
+        FUNCTION {
             bindings = <
 &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
