@@ -225,9 +225,9 @@
         MOUSE {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans            &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &lt_mouse 2 MCLK  &lt_mouse 3 RCLK  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans            &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp LEFT_ALT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &lt_mouse 2 MCLK  &lt_mouse 3 RCLK  &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans            &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans
             >;
         };
@@ -235,9 +235,9 @@
         SCROLL {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &kp LCTRL  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP  &kp PAGE_DOWN  &trans  &trans
             >;
         };
