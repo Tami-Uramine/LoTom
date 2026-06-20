@@ -279,10 +279,10 @@
         COMMAND {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(Y)            &kp LC(Z)           &kp LC(A)  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(X)            &kp LC(C)           &kp LC(V)  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(RIGHT_ARROW)  &kp LA(LEFT_ARROW)  &kp LG(V)  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(S)            &kp LG(LS(S))       &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(H)            &kp LC(F)           &kp LC(A)  &trans            &kp LC(B)  &kp LC(L)
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(X)            &kp LC(C)           &kp LC(V)  &trans            &kp LC(U)  &kp LC(E)
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(RIGHT_ARROW)  &kp LA(LEFT_ARROW)  &kp LG(V)  &trans            &kp LC(I)  &kp LC(R)
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(Y)            &kp LC(Z)           &kp LC(M)  &kp LC(NUMBER_1)
             >;
         };
 
