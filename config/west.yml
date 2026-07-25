@@ -21,7 +21,7 @@ manifest:
       remote: badjeff
       revision: zmk-0.3
     - name: zmk-tom-oled
-      remote: mygithub
+      remote: pukuhei
       revision: main
     - name: zmk-scroll-snap
       remote: kot149
