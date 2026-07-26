@@ -269,7 +269,7 @@
         to0_henkan: to0_henkan {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp INT_HEN>;
+            bindings = <&to 0 &kp INT_HENKAN>;
         };
 
         to0_i: to0_i {
