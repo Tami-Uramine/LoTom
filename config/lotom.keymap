@@ -110,6 +110,16 @@
 
             // Hold側もTap側もキー入力（kp）を使用
         };
+
+        mt_to0_henkan: mt_to0_henkan {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_TO0_HENKAN";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <400>;）
+            flavor = "tap-preferred";    // 迷った時はタップを優先（誤爆防止）
+            bindings = <&kp>, <&to0_henkan>;
+        };
     };
 
     macros {
@@ -234,6 +244,16 @@
                 <&msc SCRL_DOWN>,
                 <&macro_release>,
                 <&kp LCTRL>;
+        };
+
+        to0_henkan: to0_henkan {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+
+            bindings = <
+                &to 0
+                &kp INT_HEN
+            >;
         };
     };
 
