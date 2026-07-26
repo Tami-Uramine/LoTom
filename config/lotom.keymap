@@ -278,13 +278,11 @@
             bindings = <&to 0 &kp I>;
         };
 
-
         to0_o: to0_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to 0 &kp O>;
         };
-
     };
 
     combos { compatible = "zmk,combos"; };
@@ -309,10 +307,10 @@
         MOUSE {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &kp RCTRL         &kp RIGHT_ALT     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &lt_mouse 2 MCLK  &lt_mouse 3 RCLK  &trans  &mt_to0_henkan RIGHT_SHIFT 0
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans            &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &mt_to0_i RCTRL 0  &mt_to0_o RIGHT_ALT 0  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &lt_mouse 2 MCLK   &lt_mouse 3 RCLK       &trans  &mt_to0_henkan RIGHT_SHIFT 0
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans             &trans                 &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans             &trans
             >;
         };
 
