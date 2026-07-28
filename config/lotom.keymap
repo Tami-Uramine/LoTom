@@ -140,6 +140,16 @@
             flavor = "tap-preferred";    // 迷った時はタップを優先（誤爆防止）
             bindings = <&kp>, <&to0_o>;
         };
+        auto_exit_key: auto_exit_key {
+            compatible = "zmk,behavior-macro";
+            label = "AUTO_EXIT_KEY";
+            #binding-cells = <1>;
+
+            bindings =
+                <&macro_param_1to1>,
+                <&macro_tap>,
+                <&to 0>;
+        };
     };
 
     macros {
