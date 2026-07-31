@@ -293,10 +293,10 @@
         default_layer {
             bindings = <
 &kp ESCAPE                   &kp DELETE
-&kp TAB                      &kp Q          &kp W             &kp E        &kp R             &kp T              &kp Y               &kp U               &mt_middle RCTRL I  &mt_middle RIGHT_ALT O  &kp P               &kp BSPC
-&mt LSHIFT INT_HENKAN        &kp A          &kp S             &kp D        &kp F             &kp G              &kp H               &kp J               &lt_middle 2 K      &lt_middle 3 L          &lt_middle 4 MINUS  &mt RIGHT_SHIFT INT_HENKAN
-&mt LEFT_SHIFT INT_MUHENKAN  &kp Z          &kp X             &kp C        &kp V             &kp B              &kp N               &kp M               &kp COMMA           &kp DOT                 &kp FSLH            &mt RIGHT_SHIFT INT_MUHENKAN
-&kp BSLH                     &kp SEMICOLON  &kp SINGLE_QUOTE  &lt 7 GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &lt_middle 5 SPACE  &lt_middle 6 ENTER  &kp TAB             &kp LEFT_GUI
+&kp TAB                      &kp Q          &kp W             &kp E        &kp R             &kp T              &kp Y        &kp U        &mt_middle RCTRL I  &mt_middle RIGHT_ALT O  &kp P               &kp BSPC
+&mt LSHIFT INT_HENKAN        &kp A          &kp S             &kp D        &kp F             &kp G              &kp H        &kp J        &lt_middle 2 K      &lt_middle 3 L          &lt_middle 4 MINUS  &mt RIGHT_SHIFT INT_HENKAN
+&mt LEFT_SHIFT INT_MUHENKAN  &kp Z          &kp X             &kp C        &kp V             &kp B              &kp N        &kp M        &kp COMMA           &kp DOT                 &kp FSLH            &mt RIGHT_SHIFT INT_MUHENKAN
+&kp BSLH                     &kp SEMICOLON  &kp SINGLE_QUOTE  &lt 7 GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &lt 5 SPACE  &lt 6 ENTER  &kp TAB             &kp LEFT_GUI
             >;
 
             sensor-bindings =
