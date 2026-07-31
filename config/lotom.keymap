@@ -3,6 +3,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 // 警告を避けるため重複定義を削除、または上書き
@@ -293,10 +294,10 @@
         default_layer {
             bindings = <
 &kp ESCAPE                   &kp DELETE
-&kp TAB                      &kp Q          &kp W             &kp E        &kp R             &kp T              &kp Y        &kp U        &mt_middle RCTRL I  &mt_middle RIGHT_ALT O  &kp P               &kp BSPC
-&mt LSHIFT INT_HENKAN        &kp A          &kp S             &kp D        &kp F             &kp G              &kp H        &kp J        &lt_middle 2 K      &lt_middle 3 L          &lt_middle 4 MINUS  &mt RIGHT_SHIFT INT_HENKAN
-&mt LEFT_SHIFT INT_MUHENKAN  &kp Z          &kp X             &kp C        &kp V             &kp B              &kp N        &kp M        &kp COMMA           &kp DOT                 &kp FSLH            &mt RIGHT_SHIFT INT_MUHENKAN
-&kp BSLH                     &kp SEMICOLON  &kp SINGLE_QUOTE  &lt 7 GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &lt 5 SPACE  &lt 6 ENTER  &kp TAB             &kp LEFT_GUI
+&kp TAB                      &kp Q          &kp W             &kp E               &kp R             &kp T              &kp Y        &kp U        &mt_middle RCTRL I  &mt_middle RIGHT_ALT O  &kp P               &kp BSPC
+&mt LSHIFT INT_HENKAN        &kp A          &kp S             &kp D               &kp F             &kp G              &kp H        &kp J        &lt_middle 2 K      &lt_middle 3 L          &lt_middle 4 MINUS  &mt RIGHT_SHIFT INT_HENKAN
+&mt LEFT_SHIFT INT_MUHENKAN  &kp Z          &kp X             &kp C               &kp V             &kp B              &kp N        &kp M        &kp COMMA           &kp DOT                 &kp FSLH            &mt RIGHT_SHIFT INT_MUHENKAN
+&kp BSLH                     &kp SEMICOLON  &kp SINGLE_QUOTE  &lt_middle 7 GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &lt 5 SPACE  &lt 6 ENTER  &kp TAB             &kp LEFT_GUI
             >;
 
             sensor-bindings = <
@@ -368,7 +369,7 @@
         Bluetooth {
             bindings = <
 &studio_unlock  &trans
-&bt BT_CLR_ALL  &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_SEL 4           &trans  &trans  &trans  &trans  &trans  &trans
+&out OUT_TOG    &bt BT_SEL 0       &bt BT_SEL 1     &bt BT_SEL 2          &bt BT_SEL 3          &bt BT_SEL 4           &trans  &trans  &trans  &trans  &trans  &trans
 &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_AUTO  &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &trans             &trans           &trans                &trans                &trans                 &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &trans             &trans           &trans                &trans                &trans                 &trans  &trans  &trans  &trans
