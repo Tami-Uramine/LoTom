@@ -241,10 +241,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
-                <&macro_press>,
-                <&msc SCRL_UP>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
+                <&macro_tap>,
                 <&msc SCRL_UP>,
                 <&macro_release>,
                 <&kp LCTRL>;
@@ -258,10 +255,7 @@
             bindings =
                 <&macro_press>,
                 <&kp LCTRL>,
-                <&macro_press>,
-                <&msc SCRL_DOWN>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
+                <&macro_tap>,
                 <&msc SCRL_DOWN>,
                 <&macro_release>,
                 <&kp LCTRL>;
