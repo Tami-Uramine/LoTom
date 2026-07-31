@@ -299,10 +299,9 @@
 &kp BSLH                     &kp SEMICOLON  &kp SINGLE_QUOTE  &lt_middle 7 GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &lt 5 SPACE  &lt 6 ENTER  &kp TAB             &kp LEFT_GUI
             >;
 
-            sensor-bindings = <
-                &inc_dec_kp RIGHT_ARROW LEFT_ARROW
-                &scroll_up_down
-            >;
+            sensor-bindings =
+                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
+                <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         MOUSE {
