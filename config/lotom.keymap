@@ -161,8 +161,7 @@
             >;
 
             sensor-bindings =
-                <,
-                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>,
+                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW,
                 &scroll_up_down,
                 >;
         };
