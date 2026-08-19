@@ -438,11 +438,11 @@
 
         MOUSE {
             bindings = <
-&to0_esc                       &to0_del
-&to0_tab                       &to0_q          &to0_w      &to0_e             &to0_r         &to0_t         &to0_y             &to0_u             &mt_to0_i RCTRL 0  &mt_to0_o RIGHT_ALT 0  &to0_p             &to0_bspc
-&mt_to0_henkan LEFT_SHIFT 0    &to0_a          &to0_s      &to0_d             &to0_f         &to0_g         &to0_h             &mkp LCLK          &lt_mouse 2 MCLK   &lt_mouse 3 RCLK       &lt_to0_minus 4 0  &mt_to0_henkan RIGHT_SHIFT 0
-&mt_to0_muhenkan LEFT_SHIFT 0  &to0_z          &to0_x      &to0_c             &to0_v         &to0_b         &to0_n             &to0_m             &to0_comma         &to0_dot               &to0_slash         &mt_to0_muhenkan RIGHT_SHIFT 0
-&to0_bslash                    &to0_semicolon  &to0_quote  &lt_to0_grave 7 0  &to0_lbracket  &to0_rbracket  &lt_to0_space 5 0  &lt_to0_enter 6 0  &to0_tab           &to0_gui
+&trans  &trans
+&trans  &trans          &trans  &trans             &trans  &trans         &trans  &trans             &mt_middle RCTRL I  &mt_middle RIGHT_ALT O  &trans  &trans
+&mt LSHIFT INT_HENKAN    &trans  &trans          &trans  &trans         &trans         &trans             &mkp LCLK          &lt_mouse 2 MCLK   &lt_mouse 3 RCLK       &lt_middle 4 MINUS  &mt RIGHT_SHIFT INT_HENKAN
+&mt LEFT_SHIFT INT_MUHENKAN  &trans  &trans          &trans  &trans         &trans          &trans  &trans             &trans          &trans  &trans         &mt RIGHT_SHIFT INT_MUHENKAN
+&trans  &trans  &trans  &lt_middle 7 GRAVE  &trans  &trans  &lt 5 SPACE  &lt 6 ENTER  &trans  &trans
             >;
         };
 
