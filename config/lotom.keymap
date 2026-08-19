@@ -424,25 +424,25 @@
         default_layer {
             bindings = <
 &kp ESCAPE                   &kp DELETE
-&kp TAB                      &kp Q          &kp W             &kp E               &kp R             &kp T              &kp Y        &kp U        &mt_middle RCTRL I  &mt_middle RIGHT_ALT O  &kp P               &kp BSPC
-&mt LSHIFT INT_HENKAN        &kp A          &kp S             &kp D               &kp F             &kp G              &kp H        &kp J        &lt_middle 2 K      &lt_middle 3 L          &lt_middle 4 MINUS  &mt RIGHT_SHIFT INT_HENKAN
-&mt LEFT_SHIFT INT_MUHENKAN  &kp Z          &kp X             &kp C               &kp V             &kp B              &kp N        &kp M        &kp COMMA           &kp DOT                 &kp FSLH            &mt RIGHT_SHIFT INT_MUHENKAN
-&kp BSLH                     &kp SEMICOLON  &kp SINGLE_QUOTE  &lt_middle 7 GRAVE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &lt 5 SPACE  &lt 6 ENTER  &kp TAB             &kp LEFT_GUI
+&kp TAB                      &kp Q          &kp W             &kp E               &kp R               &kp T                &kp Y        &kp U        &mt_middle RCTRL I  &mt_middle RIGHT_ALT O  &kp P               &kp BSPC
+&mt LSHIFT INT_HENKAN        &kp A          &kp S             &kp D               &kp F               &kp G                &kp H        &kp J        &lt_middle 2 K      &lt_middle 3 L          &lt_middle 4 MINUS  &mt RIGHT_SHIFT INT_HENKAN
+&mt LEFT_SHIFT INT_MUHENKAN  &kp Z          &kp X             &kp C               &kp V               &kp B                &kp N        &kp M        &kp COMMA           &kp DOT                 &kp FSLH            &mt RIGHT_SHIFT INT_MUHENKAN
+&kp BSLH                     &kp SEMICOLON  &kp SINGLE_QUOTE  &lt_middle 9 GRAVE  &lt 8 LEFT_BRACKET  &lt 7 RIGHT_BRACKET  &lt 5 SPACE  &lt 6 ENTER  &kp TAB             &kp LEFT_GUI
             >;
 
             sensor-bindings = <
                 &inc_dec_kp RIGHT_ARROW LEFT_ARROW
                 &scroll_up_down
-                >;
+            >;
         };
 
         MOUSE {
             bindings = <
 &trans  &trans
-&trans  &trans          &trans  &trans             &trans  &trans         &trans  &trans             &mt_middle RCTRL I  &mt_middle RIGHT_ALT O  &trans  &trans
-&mt LSHIFT INT_HENKAN    &trans  &trans          &trans  &trans         &trans         &trans             &mkp LCLK          &lt_mouse 2 MCLK   &lt_mouse 3 RCLK       &lt_middle 4 MINUS  &mt RIGHT_SHIFT INT_HENKAN
-&mt LEFT_SHIFT INT_MUHENKAN  &trans  &trans          &trans  &trans         &trans          &trans  &trans             &trans          &trans  &trans         &mt RIGHT_SHIFT INT_MUHENKAN
-&trans  &trans  &trans  &lt_middle 7 GRAVE  &trans  &trans  &lt 5 SPACE  &lt 6 ENTER  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &mt_middle RCTRL I  &mt_middle RIGHT_ALT O  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &lt_mouse 2 MCLK    &lt_mouse 3 RCLK        &trans  &mt RIGHT_SHIFT INT_HENKAN
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans              &trans                  &trans  &mt RIGHT_SHIFT INT_MUHENKAN
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans              &trans
             >;
         };
 
@@ -459,10 +459,10 @@
         COMMAND {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(H)            &kp LC(F)           &kp LC(A)  &trans            &kp LC(B)  &kp LC(L)
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(X)            &kp LC(C)           &kp LC(V)  &trans            &kp LC(U)  &kp LC(E)
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(RIGHT_ARROW)  &kp LA(LEFT_ARROW)  &kp LG(V)  &trans            &kp LC(I)  &kp LC(R)
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(Y)            &kp LC(Z)           &kp LC(M)  &kp LC(NUMBER_1)
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(H)           &kp LC(F)           &kp LC(A)  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(X)           &kp LC(C)           &kp LC(V)  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(DOWN_ARROW)  &kp LA(LEFT_ARROW)  &kp LG(V)  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(Y)           &kp LC(Z)           &trans     &trans
             >;
         };
 
@@ -493,6 +493,26 @@
 &trans  &trans              &trans  &trans  &trans  &trans  &kp F6   &kp F7   &kp F8                &kp F9                 &kp F10        &kp LC(LS(EQUAL))
 &trans  &trans              &trans  &trans  &trans  &trans  &kp F11  &kp F12  &kp LC(S)             &kp LC(P)              &kp LG(LS(S))  &kp LC(MINUS)
 &trans  &trans              &trans  &trans  &trans  &trans  &trans   &trans   &kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)
+            >;
+        };
+
+        Symbol {
+            bindings = <
+&trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(NUMBER_7)     &trans            &trans            &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(NUMBER_4)     &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(EXCLAMATION)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans               &trans            &trans
+            >;
+        };
+
+        Office {
+            bindings = <
+&trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(L)  &kp LC(E)         &kp LC(R)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(B)  &kp LC(U)         &kp LC(I)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(M)  &kp LC(NUMBER_1)  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans            &trans
             >;
         };
 
