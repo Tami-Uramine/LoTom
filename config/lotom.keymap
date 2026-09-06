@@ -7,21 +7,23 @@
 
 / {
     behaviors {
-      scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-          compatible = "zmk,behavior-sensor-rotate";
-          label = "ENCODER_MSC_DOWN_UP";
-          #sensor-binding-cells = <0>;
-          bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-          tap-ms = <20>;
-      };
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-      tab_slide: behavior_sensor_rotate_tab_slide {
-          compatible = "zmk,behavior-sensor-rotate";
-          label = "ENCODER_TAB_SLIDE";
-          #sensor-binding-cells = <0>;
-          bindings = <&kp LA(LG(RIGHT_ARROW))>, <&kp LA(LG(LEFT_ARROW))>;
-          tap-ms = <20>;
-      };
+            tap-ms = <20>;
+        };
+
+        tab_slide: behavior_sensor_rotate_tab_slide {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_TAB_SLIDE";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp LA(LG(RIGHT_ARROW))>, <&kp LA(LG(LEFT_ARROW))>;
+
+            tap-ms = <20>;
+        };
 
         sl_mouse: sticky_layer_for_mouse {
             compatible = "zmk,behavior-sticky-key";
@@ -571,9 +573,9 @@
         SCROLL {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans     &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &kp RCTRL  &kp LC(N0)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans     &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans      &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &zoom_up       &trans  &zoom_down  &kp LC(N0)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans      &trans      &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP  &kp PAGE_DOWN  &trans  &trans
             >;
 
@@ -631,6 +633,7 @@
 &trans  &trans              &trans  &trans  &trans  &trans  &kp F11  &kp F12  &kp LC(S)             &kp LC(P)              &kp LG(LS(S))  &kp LC(MINUS)
 &trans  &trans              &trans  &trans  &trans  &trans  &trans   &trans   &kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)
             >;
+
             sensor-bindings = <
                 &inc_dec_kp RIGHT_ARROW LEFT_ARROW
                 &scroll_up_down
