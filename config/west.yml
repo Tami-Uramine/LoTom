@@ -15,7 +15,7 @@ manifest:
       remote: badjeff
       revision: zmk-0.3
     - name: zmk-tom-oled
-      remote: pukuhei
+      url: https://github.com/Tami-Uramine/zmk-tom-oled
       revision: main
   self:
     path: config
