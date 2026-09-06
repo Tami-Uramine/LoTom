@@ -573,9 +573,9 @@
         SCROLL {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans      &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &zoom_up       &trans  &zoom_down  &kp LC(N0)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans      &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans     &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &kp RCTRL  &kp LC(N0)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans  &trans     &trans      &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP  &kp PAGE_DOWN  &trans  &trans
             >;
 
