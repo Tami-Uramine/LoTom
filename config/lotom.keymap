@@ -569,25 +569,25 @@
         to0_exclamation: to0_exclamation {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LS(ONE)>;
+            bindings = <&to 0 &kp LS(N1)>;
         };
 
         to0_at: to0_at {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LS(TWO)>;
+            bindings = <&to 0 &kp LS(N2)>;
         };
 
         to0_percent: to0_percent {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LS(FIVE)>;
+            bindings = <&to 0 &kp LS(N5)>;
         };
 
         to0_and: to0_and {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0 &kp LS(SEVEN)>;
+            bindings = <&to 0 &kp LS(N7)>;
         };
 
         to0_tilde: to0_tilde {
