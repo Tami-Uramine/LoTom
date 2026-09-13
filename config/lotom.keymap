@@ -201,6 +201,36 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&to0_rbracket>;
         };
+
+        mt_to0_exclamation: mt_to0_exclamation {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_TO0_EXCLAMATION";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <400>;
+            flavor = "tap-preferred";    // 迷った時はタップを優先（誤爆防止）
+            bindings = <&kp>, <&to0_exclamation>;
+        };
+
+        mt_to0_at: mt_to0_at {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_TO0_AT";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <400>;
+            flavor = "tap-preferred";    // 迷った時はタップを優先（誤爆防止）
+            bindings = <&kp>, <&to0_at>;
+        };
+
+        mt_to0_percent: mt_to0_percent {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_TO0_PERCENT";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <400>;
+            flavor = "tap-preferred";    // 迷った時はタップを優先（誤爆防止）
+            bindings = <&kp>, <&to0_percent>;
+        };
     };
 
     macros {
@@ -535,6 +565,36 @@
             #binding-cells = <0>;
             bindings = <&to 0 &kp LEFT_GUI>;
         };
+
+        to0_exclamation: to0_exclamation {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &kp LS(ONE)>;
+        };
+
+        to0_at: to0_at {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &kp LS(TWO)>;
+        };
+
+        to0_percent: to0_percent {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &kp LS(FIVE)>;
+        };
+
+        to0_and: to0_and {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &kp LS(SEVEN)>;
+        };
+
+        to0_tilde: to0_tilde {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&to 0 &kp LS(GRAVE)>;
+        };
     };
 
     keymap {
@@ -542,11 +602,11 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE                   &kp DELETE
-&kp TAB                      &kp Q          &mt_middle LEFT_ALT W  &mt_middle LCTRL E  &kp R               &kp T                &kp Y        &kp U        &mt_middle RCTRL I  &mt_middle RIGHT_ALT O  &kp P               &kp BSPC
-&mt LSHIFT INT_HENKAN        &kp A          &kp S                  &kp D               &kp F               &kp G                &kp H        &kp J        &lt_middle 2 K      &lt_middle 3 L          &lt_middle 4 MINUS  &mt RIGHT_SHIFT INT_HENKAN
-&mt LEFT_SHIFT INT_MUHENKAN  &kp Z          &kp X                  &kp C               &kp V               &kp B                &kp N        &kp M        &kp COMMA           &kp DOT                 &kp FSLH            &mt RIGHT_SHIFT INT_MUHENKAN
-&kp BSLH                     &kp SEMICOLON  &kp SINGLE_QUOTE       &lt_middle 9 GRAVE  &lt 8 LEFT_BRACKET  &lt 7 RIGHT_BRACKET  &lt 5 SPACE  &lt 6 ENTER  &kp TAB             &kp LEFT_GUI
+&kp ESCAPE                          &kp DELETE
+&kp LS(NUMBER_1)                    &kp Q          &mt_middle LEFT_ALT W  &mt_middle LCTRL E      &kp R               &kp T                &kp Y        &kp U        &mt_middle RCTRL I  &mt_middle RIGHT_ALT O  &kp P               &kp BSPC
+&mt_middle LSHIFT LS(NUMBER_2)      &kp A          &kp S                  &kp D                   &kp F               &kp G                &kp H        &kp J        &lt_middle 2 K      &lt_middle 3 L          &lt_middle 4 MINUS  &mt_middle RIGHT_SHIFT INT_HENKAN
+&mt_middle LEFT_SHIFT LS(NUMBER_5)  &kp Z          &kp X                  &kp C                   &kp V               &kp B                &kp N        &kp M        &kp COMMA           &kp DOT                 &kp FSLH            &mt_middle RIGHT_SHIFT INT_MUHENKAN
+&kp LS(NUMBER_7)                    &kp SEMICOLON  &kp SINGLE_QUOTE       &lt_middle 9 LS(GRAVE)  &lt 8 LEFT_BRACKET  &lt 7 RIGHT_BRACKET  &lt 5 SPACE  &lt 6 ENTER  &kp TAB             &kp LEFT_GUI
             >;
 
             sensor-bindings = <
@@ -557,12 +617,11 @@
 
         MOUSE {
             bindings = <
-&to0_esc                       &to0_del
-&to0_tab                       &to0_q          &to0_w      &to0_e             &to0_r                &to0_t                &to0_y             &to0_u             &mt_to0_i RCTRL 0  &mt_to0_o RIGHT_ALT 0  &to0_p             &to0_bspc
-&mt_to0_henkan LEFT_SHIFT 0    &to0_a          &to0_s      &to0_d             &to0_f                &to0_g                &to0_h             &mkp LCLK          &lt_mouse 2 MCLK   &lt_mouse 3 RCLK       &lt_to0_minus 4 0  &mt_to0_henkan RIGHT_SHIFT 0
-&mt_to0_muhenkan LEFT_SHIFT 0  &to0_z          &to0_x      &to0_c             &to0_v                &to0_b                &to0_n             &to0_m             &to0_comma         &to0_dot               &to0_slash         &mt_to0_muhenkan RIGHT_SHIFT 0
-&to0_bslash                    &to0_semicolon  &to0_quote  &lt_to0_grave 9 0  &lt_to0_lbracket 8 0  &lt_to0_rbracket 7 0  &lt_to0_space 5 0  &lt_to0_enter 6 0  &to0_tab           &to0_gui
-            >;
+&to0_esc                      &to0_del
+&to0_exclamation              &to0_q          &to0_w      &to0_e      &to0_r                &to0_t                &to0_y             &to0_u             &mt_to0_i RCTRL 0  &mt_to0_o RIGHT_ALT 0  &to0_p             &to0_bspc
+&mt_to0_at LEFT_SHIFT 0       &to0_a          &to0_s      &to0_d      &to0_f                &to0_g                &to0_h             &mkp LCLK          &lt_mouse 2 MCLK   &lt_mouse 3 RCLK       &lt_to0_minus 4 0  &mt_to0_henkan RIGHT_SHIFT 0
+&mt_to0_percent LEFT_SHIFT 0  &to0_z          &to0_x      &to0_c      &to0_v                &to0_b                &to0_n             &to0_m             &to0_comma         &to0_dot               &to0_slash         &mt_to0_muhenkan RIGHT_SHIFT 0
+&to0_and
 
             sensor-bindings = <
                 &inc_dec_kp RIGHT_ARROW LEFT_ARROW
@@ -588,10 +647,10 @@
         COMMAND {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(H)           &kp LC(F)           &kp LC(A)  &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(X)           &kp LC(C)           &kp LC(V)  &trans  &kp RA(G)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(DOWN_ARROW)  &kp LA(LEFT_ARROW)  &kp LG(V)  &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(Y)           &kp LC(Z)           &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(H)            &kp LC(F)           &kp LC(A)  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(X)            &kp LC(C)           &kp LC(V)  &trans  &kp LG(X)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(RIGHT_ARROW)  &kp LA(LEFT_ARROW)  &kp LG(V)  &trans  &kp LA(G)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(Y)            &kp LC(Z)           &trans     &trans
             >;
         };
 
@@ -612,11 +671,11 @@
 
         NUM {
             bindings = <
-&trans  &kp EQUAL
-&trans  &trans     &trans  &trans  &trans  &trans  &kp ESCAPE  &kp N7     &kp N8                &kp N9                 &kp LS(SEMI)  &kp LS(SINGLE_QUOTE)
-&trans  &trans     &trans  &trans  &trans  &trans  &kp TAB     &kp N4     &kp N5                &kp N6                 &kp MINUS     &mt_middle RIGHT_SHIFT LS(EQUAL)
-&trans  &trans     &trans  &trans  &trans  &trans  &kp N0      &kp N1     &kp N2                &kp N3                 &kp FSLH      &mt_middle RIGHT_SHIFT LS(N8)
-&trans  &trans     &trans  &trans  &trans  &trans  &trans      &kp ENTER  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans     &kp EQUAL
+&trans     &trans             &trans         &trans            &trans            &trans        &kp ESCAPE  &kp N7     &mt_middle RCTRL NUMBER_8  &mt_middle RIGHT_ALT NUMBER_9  &kp LS(SEMICOLON)  &kp LS(SINGLE_QUOTE)
+&kp GRAVE  &kp LS(BACKSLASH)  &kp BACKSLASH  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp NUMBER_6  &kp TAB     &kp N4     &kp N5                     &kp N6                         &kp MINUS          &mt_middle RIGHT_SHIFT LS(EQUAL)
+&trans     &trans             &trans         &trans            &trans            &trans        &kp N0      &kp N1     &kp N2                     &kp N3                         &kp FSLH           &mt_middle RIGHT_SHIFT LS(N8)
+&trans     &trans             &trans         &trans            &trans            &trans        &trans      &kp ENTER  &kp LEFT_PARENTHESIS       &kp RIGHT_PARENTHESIS
             >;
 
             sensor-bindings = <
@@ -627,11 +686,11 @@
 
         FUNCTION {
             bindings = <
-&trans  &kp LA(LC(DELETE))
-&trans  &trans              &trans  &trans  &trans  &trans  &kp F1   &kp F2   &kp F3                &kp F4                 &kp F5         &kp LC(EQUAL)
-&trans  &trans              &trans  &trans  &trans  &trans  &kp F6   &kp F7   &kp F8                &kp F9                 &kp F10        &kp LC(LS(EQUAL))
-&trans  &trans              &trans  &trans  &trans  &trans  &kp F11  &kp F12  &kp LC(S)             &kp LC(P)              &kp LG(LS(S))  &kp LC(MINUS)
-&trans  &trans              &trans  &trans  &trans  &trans  &trans   &trans   &kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)
+&trans  &bt BT_SEL 0
+&trans  &trans        &trans  &trans  &trans  &trans  &kp F1   &kp F2   &kp F3      &kp F4        &kp F5         &bt BT_SEL 1
+&trans  &trans        &trans  &trans  &trans  &trans  &kp F6   &kp F7   &kp F8      &kp F9        &kp F10        &bt BT_SEL 2
+&trans  &trans        &trans  &trans  &trans  &trans  &kp F11  &kp F12  &kp LC(S)   &kp LC(P)     &kp LG(LS(S))  &bt BT_SEL 3
+&trans  &trans        &trans  &trans  &trans  &trans  &trans   &trans   &bt BT_CLR  &bt BT_SEL 4
             >;
 
             sensor-bindings = <
