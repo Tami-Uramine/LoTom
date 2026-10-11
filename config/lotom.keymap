@@ -96,12 +96,12 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 1>,
+                <&mo 2>,
                 <&macro_press>,
                 <&kp LCTRL>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 1>,
+                <&mo 2>,
                 <&macro_release>,
                 <&kp LCTRL>;
         };
