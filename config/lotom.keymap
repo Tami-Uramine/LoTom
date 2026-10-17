@@ -250,10 +250,10 @@
         CONTROL {
             bindings = <
 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp B         &kp U      &kp I          &kp EQUAL         &kp LS(EQUAL)      &kp MINUS
-&trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_1  &kp J      &kp E          &kp L             &kp R              &kp LS(ENTER)
-&trans  &trans  &trans  &trans  &trans  &trans  &kp N         &kp M      &mkp LCLK      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp SPACE     &kp ENTER  &kp SEMICOLON  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(B)         &kp LC(U)      &kp LC(I)             &kp LC(EQUAL)          &kp LS(LC(EQUAL))  &kp LC(MINUS)
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(NUMBER_1)  &kp LC(J)      &kp LC(E)             &kp LC(L)              &kp LC(R)          &kp LS(LC(ENTER))
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(N)         &kp LC(M)      &kp LC(LEFT_BRACKET)  &kp LC(RIGHT_BRACKET)  &kp LC(D)          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(SPACE)     &kp LC(ENTER)  &kp LC(SEMICOLON)     &trans
             >;
         };
 
