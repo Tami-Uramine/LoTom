@@ -29,7 +29,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&kp>, <&mkp>;
         };
 
@@ -37,7 +37,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&lt_zoom_on>, <&kp>;
         };
 
@@ -45,7 +45,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&lt_ctrl_on>, <&kp>;
         };
 
@@ -53,7 +53,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&lt_alt_on>, <&kp>;
         };
 
@@ -164,11 +164,11 @@
 
         default_layer {
             bindings = <
-&kp LS(NUMBER_2)         &kp DELETE
-&kp LS(GRAVE)            &kp Q       &kp W    &kp E      &kp R        &kp T         &kp Y        &kp U        &kp I             &kp O                 &kp P                      &kp BSPC
-&mt LSHIFT LS(NUMBER_1)  &kp A       &kp S    &kp D      &kp F        &kp G         &kp H        &kp J        &lt 1 K           &lt_zoom 0 L          &lt 3 MINUS                &mt RIGHT_SHIFT INT_HENKAN
-&mt LCTRL LS(SLASH)      &kp Z       &kp X    &kp C      &kp V        &kp B         &kp N        &kp M        &mkp LCLK         &mt_mouse LCTRL MCLK  &mt_mouse LEFT_SHIFT RCLK  &lt 6 INT_MUHENKAN
-&bracket    &parens  &kp LS(NUMBER_7)         &kp SLASH  &lt 5 COMMA  &lt 4 PERIOD  &lt 4 SPACE  &lt 5 ENTER  &lt_alt 0 ESCAPE  &lt 7 LEFT_GUI
+&kp LS(NUMBER_2)                &kp DELETE
+&kp LS(GRAVE)                   &kp Q       &kp W             &kp E      &kp R               &kp T                &kp Y        &kp U        &kp I             &kp O                  &kp P                      &kp BSPC
+&mt_middle LSHIFT LS(NUMBER_1)  &kp A       &kp S             &kp D      &kp F               &kp G                &kp H        &kp J        &lt_middle 1 K    &lt_zoom 0 L           &lt_middle 3 MINUS         &mt_middle RIGHT_SHIFT INT_HENKAN
+&mt_middle LCTRL LS(SLASH)      &kp Z       &kp X             &kp C      &kp V               &kp B                &kp N        &kp M        &mkp LCLK         &mt_mouse LCTRL MCLK   &mt_mouse LEFT_SHIFT RCLK  &lt_middle 6 INT_MUHENKAN
+&bracket                        &parens     &kp LS(NUMBER_7)  &kp SLASH  &lt_middle 5 COMMA  &lt_middle 4 PERIOD  &lt 4 SPACE  &lt 5 ENTER  &lt_alt 0 ESCAPE  &lt_middle 7 LEFT_GUI
             >;
 
             sensor-bindings = <
